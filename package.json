@@ -48,7 +48,7 @@
     "eslint-plugin-react-refresh": "latest",
     "fake-indexeddb": "^6.2.5",
     "globals": "latest",
-    "jsdom": "latest",
+    "jsdom": "26.1.0",
     "prettier": "latest",
     "typescript": "latest",
     "typescript-eslint": "latest",
