@@ -50,7 +50,18 @@ export async function installDictionary(manifest: DictionaryManifest, onProgress
       const rows = decodeShardRows(shard, JSON.parse(new TextDecoder().decode(buffer)) as unknown)
       if (!Array.isArray(rows) || rows.length !== shard.count) throw new Error(`shard_count_mismatch:${shard.path}`)
       const table = target.table(tableMap[shard.table] as string)
-      await table.bulkPut(rows)
+      const batchSize = 5_000
+      for (let offset = 0; offset < rows.length; offset += batchSize) {
+        await table.bulkPut(rows.slice(offset, offset + batchSize))
+        if (rows.length > batchSize) {
+          const completed = Math.min(rows.length, offset + batchSize)
+          onProgress({
+            current: i + completed / rows.length,
+            total: manifest.shards.length,
+            label: `${i + 1} / ${manifest.shards.length} · ${completed.toLocaleString()} / ${rows.length.toLocaleString()}`,
+          })
+        }
+      }
     }
     const wordCount = await target.words.count(); const expressionCount = await target.expressions.count()
     if (wordCount !== manifest.wordCount || expressionCount !== manifest.expressionCount) throw new Error('dictionary_count_mismatch')
