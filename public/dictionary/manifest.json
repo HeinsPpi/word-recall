@@ -1,0 +1,1260 @@
+{
+  "schemaVersion": 1,
+  "dictionaryVersion": "2026.10.05-d47183b3",
+  "buildDate": "2026-10-05T11:15:44.652267+00:00",
+  "wordCount": 8518,
+  "expressionCount": 738,
+  "existenceIndexCount": 1355837,
+  "exampleCount": 112491,
+  "totalBytes": 95661879,
+  "shards": [
+    {
+      "path": "words/0.json",
+      "table": "words",
+      "count": 546,
+      "bytes": 133456,
+      "sha256": "e89ebb702812dff2dd837ad6f0946b9239c0db371c512606c5ead854eac65f79"
+    },
+    {
+      "path": "words/1.json",
+      "table": "words",
+      "count": 555,
+      "bytes": 135559,
+      "sha256": "15765c4cbd23458fc5e266c608fa81ee536bd08f63d032a1f61e5e722a9b46c6"
+    },
+    {
+      "path": "words/2.json",
+      "table": "words",
+      "count": 565,
+      "bytes": 138344,
+      "sha256": "fdad300021abc312c5596b6d11226ceeecb0c451e8a6dcead10af40a0faedc33"
+    },
+    {
+      "path": "words/3.json",
+      "table": "words",
+      "count": 509,
+      "bytes": 124382,
+      "sha256": "cd2e40b04a4ba6c9ed34a0675adc38ad8b6fcbc9489b9173d06626713bfd0215"
+    },
+    {
+      "path": "words/4.json",
+      "table": "words",
+      "count": 526,
+      "bytes": 128147,
+      "sha256": "63ce83c49205be3d3934903778e01ff7dff9a6e20004586b80543bdf03f988fa"
+    },
+    {
+      "path": "words/5.json",
+      "table": "words",
+      "count": 531,
+      "bytes": 129807,
+      "sha256": "489d195873719d0eba9eecc8784722d751c52c040fb22f49bca1c4e21cc3e96a"
+    },
+    {
+      "path": "words/6.json",
+      "table": "words",
+      "count": 520,
+      "bytes": 127167,
+      "sha256": "637d141fb482d9a420d7dd616e48bcca9820a55faf430c43e4033f3bc4804adf"
+    },
+    {
+      "path": "words/7.json",
+      "table": "words",
+      "count": 504,
+      "bytes": 124113,
+      "sha256": "03963f4e6c8f3eafc14728de6d64d7c8c5f8a1e477ea497045dd0583c9ac93e7"
+    },
+    {
+      "path": "words/8.json",
+      "table": "words",
+      "count": 546,
+      "bytes": 134220,
+      "sha256": "73ea7feafaea7b1c46137948c6ae51d8d93b1f00aafcd1b855759e78fdeb90b5"
+    },
+    {
+      "path": "words/9.json",
+      "table": "words",
+      "count": 505,
+      "bytes": 123327,
+      "sha256": "36220c795b938250a7fd8746f618932707a03e8431d9c09fdc9430fd7caed5f6"
+    },
+    {
+      "path": "words/a.json",
+      "table": "words",
+      "count": 564,
+      "bytes": 138105,
+      "sha256": "5fc36de7da579941156133c5897abecd3b0f85b2a7a7c9b5e3532487d186f3cc"
+    },
+    {
+      "path": "words/b.json",
+      "table": "words",
+      "count": 522,
+      "bytes": 127357,
+      "sha256": "966c1729558bbee072e2eab4009ce2c90dd9237d27107798a87f04fca7a3a4c9"
+    },
+    {
+      "path": "words/c.json",
+      "table": "words",
+      "count": 531,
+      "bytes": 130010,
+      "sha256": "2ce105d5997e13da99186a35a176f9db583a677e3a910d3ade3c94c17bb8dde0"
+    },
+    {
+      "path": "words/d.json",
+      "table": "words",
+      "count": 560,
+      "bytes": 137175,
+      "sha256": "adb8b603a825084992156e8f1e24e620b8825de1e78443f42474855ed1e52a84"
+    },
+    {
+      "path": "words/e.json",
+      "table": "words",
+      "count": 509,
+      "bytes": 124719,
+      "sha256": "afea72ac5c5860ab595aa035dac012483a41c755792579bb1db160e5b45f3a94"
+    },
+    {
+      "path": "words/f.json",
+      "table": "words",
+      "count": 525,
+      "bytes": 128945,
+      "sha256": "a7b425b056fe2d3f07097ca5947aaf3619410650a149c760d69075f290bc0235"
+    },
+    {
+      "path": "meanings/0.json",
+      "table": "meanings",
+      "count": 467,
+      "bytes": 104070,
+      "sha256": "8092474963544261999b7bfa14045a0b89a246e9e54450d495b143dcdd7ea307"
+    },
+    {
+      "path": "meanings/1.json",
+      "table": "meanings",
+      "count": 509,
+      "bytes": 116006,
+      "sha256": "0fa385fbbc89fdfc9f8cc758209c39c91a180dec146e352d424e43babcd3a709"
+    },
+    {
+      "path": "meanings/2.json",
+      "table": "meanings",
+      "count": 467,
+      "bytes": 98386,
+      "sha256": "64de04bfd92a8d2dbe847eae158b54b60ee44a48fca60fa45823fe41122937ad"
+    },
+    {
+      "path": "meanings/3.json",
+      "table": "meanings",
+      "count": 481,
+      "bytes": 108948,
+      "sha256": "30e363ffeac996bfd977ffc1fd2fb6c069057bd827a8b07cd2f9df7868e8d1f8"
+    },
+    {
+      "path": "meanings/4.json",
+      "table": "meanings",
+      "count": 521,
+      "bytes": 116882,
+      "sha256": "35abe5f9757014c30df988bcb6325fcb89343b7c1286782fd3d53adf42d992a3"
+    },
+    {
+      "path": "meanings/5.json",
+      "table": "meanings",
+      "count": 469,
+      "bytes": 102259,
+      "sha256": "7c073986eb367447a8a8db48fdcfa962e353fa8a47db469edae887463a121e14"
+    },
+    {
+      "path": "meanings/6.json",
+      "table": "meanings",
+      "count": 471,
+      "bytes": 101774,
+      "sha256": "550d4084aa9fc45ea05eeb147e96acbba33608c587c0fccbab07c45590cba132"
+    },
+    {
+      "path": "meanings/7.json",
+      "table": "meanings",
+      "count": 477,
+      "bytes": 104917,
+      "sha256": "b49162b7e054b8ae087a1d2e25782d135f41d44923405c2cc84cfbd909379f30"
+    },
+    {
+      "path": "meanings/8.json",
+      "table": "meanings",
+      "count": 454,
+      "bytes": 98085,
+      "sha256": "0786ef587c1ee0bed4dd8df7ffc8ecf3d62193dbee40c98796d28e809aa17a11"
+    },
+    {
+      "path": "meanings/9.json",
+      "table": "meanings",
+      "count": 502,
+      "bytes": 107730,
+      "sha256": "c7368826ba6a1646c0db6ae5d0a0763b0c859d5376a5745c27db39fc40817535"
+    },
+    {
+      "path": "meanings/a.json",
+      "table": "meanings",
+      "count": 471,
+      "bytes": 103068,
+      "sha256": "1a647dddd9f950124c3d691ccafabc4ba4d50b2d44d66c40022827a8e313725d"
+    },
+    {
+      "path": "meanings/b.json",
+      "table": "meanings",
+      "count": 488,
+      "bytes": 111466,
+      "sha256": "df021b2760f7bc856a098560aad9001be0b578b97cf6dddc8aba8afe4e2b5523"
+    },
+    {
+      "path": "meanings/c.json",
+      "table": "meanings",
+      "count": 462,
+      "bytes": 104986,
+      "sha256": "d3834383b20f87ee4ef5b1ed7d8b6f7480b70338df2eeacddf1c702ab2937f18"
+    },
+    {
+      "path": "meanings/d.json",
+      "table": "meanings",
+      "count": 479,
+      "bytes": 107564,
+      "sha256": "1641ae04351499db4eeed3cbeb2beba18d152471b7c0588f19a532b6fe246247"
+    },
+    {
+      "path": "meanings/e.json",
+      "table": "meanings",
+      "count": 470,
+      "bytes": 104842,
+      "sha256": "68de74c22a6dbe59c84e1c5478e53aaf37aeb1fc501b855506652a4edf5012ab"
+    },
+    {
+      "path": "meanings/f.json",
+      "table": "meanings",
+      "count": 463,
+      "bytes": 99426,
+      "sha256": "6b4bcaa18dc8bd7774c2e589add38b1b0b265a3be6c505fee999de4fccd9d35b"
+    },
+    {
+      "path": "definitions/0.json",
+      "table": "definitions",
+      "count": 4861,
+      "bytes": 765885,
+      "sha256": "2a4dae1e3d767e39259fd31ceb3ec6f6aaef7f63e04e557e8a8b6857ee562b8d"
+    },
+    {
+      "path": "definitions/1.json",
+      "table": "definitions",
+      "count": 4918,
+      "bytes": 775900,
+      "sha256": "101ba23f72022bb848690a3e12b089e58768032eb7a77c2f18b9692d324fc1bd"
+    },
+    {
+      "path": "definitions/2.json",
+      "table": "definitions",
+      "count": 4935,
+      "bytes": 777917,
+      "sha256": "d90b5f03b750a96e2219814ecc3d0fb5cf3f3578661710ada65f78156fd3ba32"
+    },
+    {
+      "path": "definitions/3.json",
+      "table": "definitions",
+      "count": 4964,
+      "bytes": 778735,
+      "sha256": "a6422d50168e5e257930dce602643e46848971e1d7ae985125aaf7c15c40e1f9"
+    },
+    {
+      "path": "definitions/4.json",
+      "table": "definitions",
+      "count": 4948,
+      "bytes": 780659,
+      "sha256": "aceb05d9e93398846bf92f2b56158fac8363d3890352b177a74c135b7fddc9e5"
+    },
+    {
+      "path": "definitions/5.json",
+      "table": "definitions",
+      "count": 4972,
+      "bytes": 782406,
+      "sha256": "9bbbe6d96c2b2824d47c639ff44501efa8dd514153d243f670c621fa95245795"
+    },
+    {
+      "path": "definitions/6.json",
+      "table": "definitions",
+      "count": 4859,
+      "bytes": 764420,
+      "sha256": "2175b28f17aef1043fc56009872ed24a6a5a6865c7f4966901f8ec5906228b5f"
+    },
+    {
+      "path": "definitions/7.json",
+      "table": "definitions",
+      "count": 4850,
+      "bytes": 765027,
+      "sha256": "512ce5d80e7c985cc35f757e18f90a2896ecab24db1599ebf492f2feb3e73a2e"
+    },
+    {
+      "path": "definitions/8.json",
+      "table": "definitions",
+      "count": 5038,
+      "bytes": 792644,
+      "sha256": "8102615857428d7287cbb4cd5eda6825aae9a6e8a68412816b318791190b8bdc"
+    },
+    {
+      "path": "definitions/9.json",
+      "table": "definitions",
+      "count": 4904,
+      "bytes": 775384,
+      "sha256": "ba70f309c9e77ab135b88bded2fa3b7ab564d73a6ff00c590bf024216381935a"
+    },
+    {
+      "path": "definitions/a.json",
+      "table": "definitions",
+      "count": 4938,
+      "bytes": 782181,
+      "sha256": "1d1acdc98c808e67e84b57ea1ee2c1324541f15d1cc5c3afff4cbfae58a79ae6"
+    },
+    {
+      "path": "definitions/b.json",
+      "table": "definitions",
+      "count": 4935,
+      "bytes": 775157,
+      "sha256": "25057e6d94576687455c9954df796b463a410cbab6ed35d1ee5f18d77b786dab"
+    },
+    {
+      "path": "definitions/c.json",
+      "table": "definitions",
+      "count": 4943,
+      "bytes": 782137,
+      "sha256": "6fe4409a93df076f0044bdd88fafba7c02673c05cc8e4b7eda2ce58ef32f253c"
+    },
+    {
+      "path": "definitions/d.json",
+      "table": "definitions",
+      "count": 4802,
+      "bytes": 756457,
+      "sha256": "da074978d2856479d35b3a6bdf4be92bf7b146040aefb700cbfac4691d5677d4"
+    },
+    {
+      "path": "definitions/e.json",
+      "table": "definitions",
+      "count": 4894,
+      "bytes": 770413,
+      "sha256": "a429969715c06827b19093d72a6d4a7b1734e7d6a7924b4e03188335aa04e760"
+    },
+    {
+      "path": "definitions/f.json",
+      "table": "definitions",
+      "count": 4807,
+      "bytes": 759165,
+      "sha256": "8d6ea1ee5e514a01ce93ed0b9f6ae283bb4f907c876e6822e415d40d88eadad9"
+    },
+    {
+      "path": "pronunciations/0.json",
+      "table": "pronunciations",
+      "count": 2093,
+      "bytes": 230089,
+      "sha256": "888f956f2897a2f4ae8c88fc555f8225562f5068c4e0e26c647bb902d9f99564"
+    },
+    {
+      "path": "pronunciations/1.json",
+      "table": "pronunciations",
+      "count": 2060,
+      "bytes": 226617,
+      "sha256": "fb5986d9f226dfc7a8165d3af0b834c4b96c7059e4edae4cbe15bf93821cd96e"
+    },
+    {
+      "path": "pronunciations/2.json",
+      "table": "pronunciations",
+      "count": 2115,
+      "bytes": 231957,
+      "sha256": "5bbffdf337839f6785b0b82a1fe6bc741ffc45f3d046dc832f91b02d68a1e7ff"
+    },
+    {
+      "path": "pronunciations/3.json",
+      "table": "pronunciations",
+      "count": 1967,
+      "bytes": 216244,
+      "sha256": "89932a15b4ad50b969b17de65d550b1e57c78fe4f65256b9a18db0bd91b5a464"
+    },
+    {
+      "path": "pronunciations/4.json",
+      "table": "pronunciations",
+      "count": 2071,
+      "bytes": 227791,
+      "sha256": "3c81cda385f834024af6b63ad527803b84624bb68ec5f89f824820331837bdfb"
+    },
+    {
+      "path": "pronunciations/5.json",
+      "table": "pronunciations",
+      "count": 2046,
+      "bytes": 225156,
+      "sha256": "ffcc558654c5ada584c97e18c2dacd24eb8be64f2432c6c02a8871f3b9331d64"
+    },
+    {
+      "path": "pronunciations/6.json",
+      "table": "pronunciations",
+      "count": 2074,
+      "bytes": 227903,
+      "sha256": "ebed34d43d4e4d72a806fc6067601da397f638b15a35e641c7b0bac209c26b69"
+    },
+    {
+      "path": "pronunciations/7.json",
+      "table": "pronunciations",
+      "count": 2090,
+      "bytes": 229905,
+      "sha256": "203e1f4f7610269071e72059267f441d2e8eb5cf3c2f8fd6bedf01b3a7ccf0fd"
+    },
+    {
+      "path": "pronunciations/8.json",
+      "table": "pronunciations",
+      "count": 2122,
+      "bytes": 232920,
+      "sha256": "08fb317d82826d9ae17443c8a328f3bf8ab09ce2f536fd93e94adf50bb9a9ae7"
+    },
+    {
+      "path": "pronunciations/9.json",
+      "table": "pronunciations",
+      "count": 2103,
+      "bytes": 230917,
+      "sha256": "5cfea5827716737029985c26fed3185efbc70aa07e67b661640ed8d00a67df54"
+    },
+    {
+      "path": "pronunciations/a.json",
+      "table": "pronunciations",
+      "count": 2021,
+      "bytes": 222199,
+      "sha256": "9adbd21cb003d94a8c532e90e41a5b3159bc1e0c3f177e2f7bd128f8ee467fef"
+    },
+    {
+      "path": "pronunciations/b.json",
+      "table": "pronunciations",
+      "count": 2051,
+      "bytes": 224629,
+      "sha256": "955318988b4d24195ab7cfc884163f91b94d74a53e60ba959e6cc99e81ac1009"
+    },
+    {
+      "path": "pronunciations/c.json",
+      "table": "pronunciations",
+      "count": 2073,
+      "bytes": 227450,
+      "sha256": "c4162f17b373c559ff3e01892e28509908f1777d42e3747fc87beb04d5849a6a"
+    },
+    {
+      "path": "pronunciations/d.json",
+      "table": "pronunciations",
+      "count": 2058,
+      "bytes": 226618,
+      "sha256": "c03ab8be7771e4555be5e45fec576dc478970154af1ac000026b94df7a28700d"
+    },
+    {
+      "path": "pronunciations/e.json",
+      "table": "pronunciations",
+      "count": 2181,
+      "bytes": 239611,
+      "sha256": "9df31ee779c07cbe464655c55e0659fedf8cac330bb47e3590778f01095a2bc5"
+    },
+    {
+      "path": "pronunciations/f.json",
+      "table": "pronunciations",
+      "count": 2068,
+      "bytes": 227258,
+      "sha256": "f7aaa327eb8eda03e0e5c75882d1569f24f50d1527da2b80baf9046f896b1fba"
+    },
+    {
+      "path": "wordForms/0.json",
+      "table": "wordForms",
+      "count": 2532,
+      "bytes": 415042,
+      "sha256": "11a9081222bcd505129abf738c55ea55172ea27e892cf5844c94a14e807d57d8"
+    },
+    {
+      "path": "wordForms/1.json",
+      "table": "wordForms",
+      "count": 2604,
+      "bytes": 426575,
+      "sha256": "9c4c6257affdabd0f215a7cc73559b91664535c2b67ba279603f93b7c958f1f3"
+    },
+    {
+      "path": "wordForms/2.json",
+      "table": "wordForms",
+      "count": 2531,
+      "bytes": 413844,
+      "sha256": "62b46fb7167d155d1db636624324afa2e398bc1eae4fbb3aceac57a2b4f397f4"
+    },
+    {
+      "path": "wordForms/3.json",
+      "table": "wordForms",
+      "count": 2548,
+      "bytes": 417825,
+      "sha256": "3dc68e501de9e117e155345d2d40bd628eb012f921b17b87b31b5b12ea134df3"
+    },
+    {
+      "path": "wordForms/4.json",
+      "table": "wordForms",
+      "count": 2506,
+      "bytes": 410762,
+      "sha256": "6e660a25595ecd7f26d495b4c9e7ffe7773848329d0b4424018efb359e96724d"
+    },
+    {
+      "path": "wordForms/5.json",
+      "table": "wordForms",
+      "count": 2573,
+      "bytes": 421779,
+      "sha256": "d58ddf88c81631bab9a658e24f8d6c6971224de0963a032ecaf8f6609d8162ca"
+    },
+    {
+      "path": "wordForms/6.json",
+      "table": "wordForms",
+      "count": 2584,
+      "bytes": 423302,
+      "sha256": "d4db04b8ae3cb19dec1a1211b05b35aa82597a42396806ded4f6f35c03ea2c12"
+    },
+    {
+      "path": "wordForms/7.json",
+      "table": "wordForms",
+      "count": 2668,
+      "bytes": 437679,
+      "sha256": "f56105bdbc4415fdbff456f90d420baa57cbd1d7be2fdedd5a7c9f99b37f0f0a"
+    },
+    {
+      "path": "wordForms/8.json",
+      "table": "wordForms",
+      "count": 2598,
+      "bytes": 425279,
+      "sha256": "b23732801c869bfaf34b9eb3c3a313e6c4fe473947652dd223fce590d45d9ebf"
+    },
+    {
+      "path": "wordForms/9.json",
+      "table": "wordForms",
+      "count": 2592,
+      "bytes": 424757,
+      "sha256": "c3d6f464dabd77e22a95526e26e08f1a17b4ef42d10100bd52007168cf221cff"
+    },
+    {
+      "path": "wordForms/a.json",
+      "table": "wordForms",
+      "count": 2557,
+      "bytes": 419209,
+      "sha256": "0bb61abb5eff3f39b92a770a23bb372d5d517e77860c0785223b3d57f4321af9"
+    },
+    {
+      "path": "wordForms/b.json",
+      "table": "wordForms",
+      "count": 2571,
+      "bytes": 421225,
+      "sha256": "d4057ebd889180fce656ba7eb6ca1244589bd3245e9ba3bd4b3e55b7f5a43d56"
+    },
+    {
+      "path": "wordForms/c.json",
+      "table": "wordForms",
+      "count": 2504,
+      "bytes": 409991,
+      "sha256": "590fbacfe1d1474f1de97413a0dabd25d4767268f9f9254440b4f7009d4e9372"
+    },
+    {
+      "path": "wordForms/d.json",
+      "table": "wordForms",
+      "count": 2539,
+      "bytes": 415983,
+      "sha256": "ca223ee23d9ce86f1caaa1e81fc0a29a0adad37964c045adb1ed595a0b2e0b76"
+    },
+    {
+      "path": "wordForms/e.json",
+      "table": "wordForms",
+      "count": 2611,
+      "bytes": 427702,
+      "sha256": "e2d68c093a46d91a0d2c2532d4c7e024694935d200643e824048e3664d5798c1"
+    },
+    {
+      "path": "wordForms/f.json",
+      "table": "wordForms",
+      "count": 2445,
+      "bytes": 400388,
+      "sha256": "ff743e53f529110bb002ef5e1a6d4ffa7bef24a0dc40b1c54c456ac9dec18265"
+    },
+    {
+      "path": "examples/0.json",
+      "table": "examples",
+      "count": 6763,
+      "bytes": 1875739,
+      "sha256": "bab45de61d2071f2edb32227fdacb57ee22a57bb14bec54f024a9c363680a65a"
+    },
+    {
+      "path": "examples/1.json",
+      "table": "examples",
+      "count": 6661,
+      "bytes": 1840692,
+      "sha256": "251185616d3243afd9de467ac9cbca4b75cc3adaeaf293711acc38ba66546e06"
+    },
+    {
+      "path": "examples/2.json",
+      "table": "examples",
+      "count": 6631,
+      "bytes": 1856946,
+      "sha256": "aa8a87fb11921ed52d8ff4eda1262f69e9ba6fa013f3e448b4b040ed6e782e5a"
+    },
+    {
+      "path": "examples/3.json",
+      "table": "examples",
+      "count": 6713,
+      "bytes": 1861230,
+      "sha256": "21a142ac15a14e78febf4eb76d099d0e6bb86357c8eed0bbf1f8f374980af532"
+    },
+    {
+      "path": "examples/4.json",
+      "table": "examples",
+      "count": 6690,
+      "bytes": 1857045,
+      "sha256": "101b1efb32d3c780c542f8d1b440737c36765484cd1cd57a55c4151e242ca533"
+    },
+    {
+      "path": "examples/5.json",
+      "table": "examples",
+      "count": 6598,
+      "bytes": 1824654,
+      "sha256": "1af4535d5141f635ca1f4be69bd2bff2f704951de8531e1b0b38a93632c06e59"
+    },
+    {
+      "path": "examples/6.json",
+      "table": "examples",
+      "count": 6839,
+      "bytes": 1881140,
+      "sha256": "58e71db3a66f5a2186168dcc56e6edc847482e02a53a58cd295be5de55d9e0ef"
+    },
+    {
+      "path": "examples/7.json",
+      "table": "examples",
+      "count": 6773,
+      "bytes": 1882302,
+      "sha256": "299de75e9f4302c856b1fecdc44863c42c0537c02d617253df927bacee9b2307"
+    },
+    {
+      "path": "examples/8.json",
+      "table": "examples",
+      "count": 6790,
+      "bytes": 1890921,
+      "sha256": "4d53f0e51606f35a0507e0597851dbc01891d0affc8be9d4e38d6a53e13d1332"
+    },
+    {
+      "path": "examples/9.json",
+      "table": "examples",
+      "count": 6734,
+      "bytes": 1869173,
+      "sha256": "9852f4db92ed70bf6d5a4debc593f5117448f63a92c8c1139ccd587a8dcd39f2"
+    },
+    {
+      "path": "examples/a.json",
+      "table": "examples",
+      "count": 6708,
+      "bytes": 1844760,
+      "sha256": "dcfef19a48a12f31e5258843fbca7646a20341fac7177a2cb4e1d6bfb34a72d0"
+    },
+    {
+      "path": "examples/b.json",
+      "table": "examples",
+      "count": 6655,
+      "bytes": 1840425,
+      "sha256": "6d85230d65593ec75aa14d0b09edf9af8dc47bf8247d0fb0df43da1b9dffa27b"
+    },
+    {
+      "path": "examples/c.json",
+      "table": "examples",
+      "count": 6824,
+      "bytes": 1906770,
+      "sha256": "fc35681c36cef250d788293b7aced8a7e2c3bc97a0414df97a596e92abcd4edf"
+    },
+    {
+      "path": "examples/d.json",
+      "table": "examples",
+      "count": 6748,
+      "bytes": 1860764,
+      "sha256": "4092cb1ca2c94b00f317b81c60ac502aa4f633405020f09301790632b0dea803"
+    },
+    {
+      "path": "examples/e.json",
+      "table": "examples",
+      "count": 6722,
+      "bytes": 1854223,
+      "sha256": "2fc16088e4d74c2e51ce035347d300273584b802cfcd0bdba8210f1fae16e98d"
+    },
+    {
+      "path": "examples/f.json",
+      "table": "examples",
+      "count": 6607,
+      "bytes": 1834258,
+      "sha256": "8983972470750d3bd57e571061a2030a09c1a4e3e9d7449bdc566c1fce942e0a"
+    },
+    {
+      "path": "expressions/0.json",
+      "table": "expressions",
+      "count": 50,
+      "bytes": 10833,
+      "sha256": "faa3543887f26ada4e883661cb0e759b8f319d72a8efb95b864838b50addb190"
+    },
+    {
+      "path": "expressions/1.json",
+      "table": "expressions",
+      "count": 58,
+      "bytes": 12519,
+      "sha256": "5aad763dfb8f0bf178bf0846f0eaf0f6cf693d30a0a0105c69f58f1ed1d76d40"
+    },
+    {
+      "path": "expressions/2.json",
+      "table": "expressions",
+      "count": 51,
+      "bytes": 11010,
+      "sha256": "effcb863d5d98265dd1e35280423513e9914d47f68792e33f27ce2c00e93d475"
+    },
+    {
+      "path": "expressions/3.json",
+      "table": "expressions",
+      "count": 45,
+      "bytes": 9819,
+      "sha256": "0ef09f3a31a709e9bb6d379d398a2b966d9d1051ce3906f661a1cf6e384352fc"
+    },
+    {
+      "path": "expressions/4.json",
+      "table": "expressions",
+      "count": 35,
+      "bytes": 7556,
+      "sha256": "725914e0977a77ce37a3088d36b371096ef4b5385987745d090b8f28788f2a84"
+    },
+    {
+      "path": "expressions/5.json",
+      "table": "expressions",
+      "count": 48,
+      "bytes": 10316,
+      "sha256": "cbae89c131feb09edd1a2a0ab6884dadf569c38f2f3efc7277de4b7692994028"
+    },
+    {
+      "path": "expressions/6.json",
+      "table": "expressions",
+      "count": 52,
+      "bytes": 11141,
+      "sha256": "8a1c65f6c5015de309aec64ca1e65a42f33a52a599235f19afe49f242e33d4d2"
+    },
+    {
+      "path": "expressions/7.json",
+      "table": "expressions",
+      "count": 46,
+      "bytes": 9872,
+      "sha256": "325754876074380f6f5e153d875ef012b52972299c50927ccec77a54b8b58a7d"
+    },
+    {
+      "path": "expressions/8.json",
+      "table": "expressions",
+      "count": 34,
+      "bytes": 7376,
+      "sha256": "a8c9c683e6e69c997cb76191d2329a0f53f3577aeb37f2f2cc5214572eeb1673"
+    },
+    {
+      "path": "expressions/9.json",
+      "table": "expressions",
+      "count": 55,
+      "bytes": 11939,
+      "sha256": "ce7fbf2e78b95fc75165bf296f101b50808bb360ada4e1de4ba207bd192393f2"
+    },
+    {
+      "path": "expressions/a.json",
+      "table": "expressions",
+      "count": 46,
+      "bytes": 9964,
+      "sha256": "133aeb4fc19f5facf30655ce72b47ed8a196c839c0dedcb41d916a49fd7d9bd2"
+    },
+    {
+      "path": "expressions/b.json",
+      "table": "expressions",
+      "count": 45,
+      "bytes": 9685,
+      "sha256": "6a383b8b52feb1dd4418d5f403a6e5f0ec26d0db892d50338f619ad96b21dad2"
+    },
+    {
+      "path": "expressions/c.json",
+      "table": "expressions",
+      "count": 44,
+      "bytes": 9547,
+      "sha256": "44ac3b4b98096fd0284cc9cd69c86e615b3d10e67a94350aca277c92c4909155"
+    },
+    {
+      "path": "expressions/d.json",
+      "table": "expressions",
+      "count": 51,
+      "bytes": 11051,
+      "sha256": "c031366aef7b99a270337568bf131fa4bd6b10b13c1d359d3bcd0f29c07e3642"
+    },
+    {
+      "path": "expressions/e.json",
+      "table": "expressions",
+      "count": 41,
+      "bytes": 8909,
+      "sha256": "8f613f86d7e808d0ed6b6a09cbdcfa80cbd547f4f356f40f4be360b05a7dbb42"
+    },
+    {
+      "path": "expressions/f.json",
+      "table": "expressions",
+      "count": 37,
+      "bytes": 7960,
+      "sha256": "4ac81b5cda86a019a689c41cb795e09cb4c0146dd50bec0f35ad2e10e9b6133c"
+    },
+    {
+      "path": "expressionWords/0.json",
+      "table": "expressionWords",
+      "count": 115,
+      "bytes": 12191,
+      "sha256": "375a2144cf0701ce1cf1868a4a67b4fcff63331b7e90ad998b44c02e946af6cc"
+    },
+    {
+      "path": "expressionWords/1.json",
+      "table": "expressionWords",
+      "count": 99,
+      "bytes": 10495,
+      "sha256": "d2af443cb486aac0f93b1a2fa9cd7e021e24c8482b4032f2815d9f0bfb43f157"
+    },
+    {
+      "path": "expressionWords/2.json",
+      "table": "expressionWords",
+      "count": 89,
+      "bytes": 9435,
+      "sha256": "937a32998be329cb9d2a45f6e015bd1453ebdf03e7a4c6c82b4db2fd62299265"
+    },
+    {
+      "path": "expressionWords/3.json",
+      "table": "expressionWords",
+      "count": 97,
+      "bytes": 10283,
+      "sha256": "c2b2c5d1e4099a1b9eb5c766dc54384638b45bf06098e8515be72a57fa271a07"
+    },
+    {
+      "path": "expressionWords/4.json",
+      "table": "expressionWords",
+      "count": 74,
+      "bytes": 7845,
+      "sha256": "234515d1855d835e532a2a8dca38fb8a034b6579f52134f2faa5f282d5913664"
+    },
+    {
+      "path": "expressionWords/5.json",
+      "table": "expressionWords",
+      "count": 106,
+      "bytes": 11237,
+      "sha256": "d479cb5945d724e3b6cf99091c09fa0157f5fd1fbd67d642b55200a53a3c8693"
+    },
+    {
+      "path": "expressionWords/6.json",
+      "table": "expressionWords",
+      "count": 104,
+      "bytes": 11025,
+      "sha256": "faee34763e6ea77da7c126319ccc7333dd11983c3da2cc3e7c867d4f9c5e878f"
+    },
+    {
+      "path": "expressionWords/7.json",
+      "table": "expressionWords",
+      "count": 99,
+      "bytes": 10495,
+      "sha256": "249c1daebf499fb3113adabd710b2647921d06250137148d5dcb46825e4f8563"
+    },
+    {
+      "path": "expressionWords/8.json",
+      "table": "expressionWords",
+      "count": 105,
+      "bytes": 11131,
+      "sha256": "3a64e41620993fad9fe36c2f3a923e5f126ac77d45e0bbfae7beb1bc79c0f03f"
+    },
+    {
+      "path": "expressionWords/9.json",
+      "table": "expressionWords",
+      "count": 89,
+      "bytes": 9435,
+      "sha256": "af66a9348a6440c5a053a7424efbc348399fde45052ef91bcc69cf9e5d1def5b"
+    },
+    {
+      "path": "expressionWords/a.json",
+      "table": "expressionWords",
+      "count": 88,
+      "bytes": 9329,
+      "sha256": "93ce49f0af19a5431c786cd0fb38d3b145b48105e8748d22cd01eae6d673630e"
+    },
+    {
+      "path": "expressionWords/b.json",
+      "table": "expressionWords",
+      "count": 97,
+      "bytes": 10283,
+      "sha256": "b563af44d642edb9ceb20b718cf63ad07676056093e054eefe6f335abc5caa50"
+    },
+    {
+      "path": "expressionWords/c.json",
+      "table": "expressionWords",
+      "count": 96,
+      "bytes": 10177,
+      "sha256": "4a42b30c1a5096b0a66ffac1caf215c7cf9200d7cf3e158a61983cbd1c530608"
+    },
+    {
+      "path": "expressionWords/d.json",
+      "table": "expressionWords",
+      "count": 101,
+      "bytes": 10707,
+      "sha256": "1caa5c79dbaf7dda341bfe248377a0aa61f956eb62a788d88bcf212c385df23e"
+    },
+    {
+      "path": "expressionWords/e.json",
+      "table": "expressionWords",
+      "count": 89,
+      "bytes": 9435,
+      "sha256": "03b04d7da4f53edd4401f2a3184f249c19e6543b9a45d5ab3735735d95142691"
+    },
+    {
+      "path": "expressionWords/f.json",
+      "table": "expressionWords",
+      "count": 99,
+      "bytes": 10495,
+      "sha256": "cdd5dd6940f97db0da4c810f87368e9852b5c5bba39af2257b2735f76ea4f9af"
+    },
+    {
+      "path": "expressionMeanings/0.json",
+      "table": "expressionMeanings",
+      "count": 51,
+      "bytes": 10558,
+      "sha256": "9cc8e8e6f50259ea7fb435df6814363ee18edbb5fe0172176fc6b631a2f9b8ac"
+    },
+    {
+      "path": "expressionMeanings/1.json",
+      "table": "expressionMeanings",
+      "count": 47,
+      "bytes": 9528,
+      "sha256": "ebcaf38e15787f1e4daf9d60c10036559860b68bf134dcbabba46b22571ce656"
+    },
+    {
+      "path": "expressionMeanings/2.json",
+      "table": "expressionMeanings",
+      "count": 57,
+      "bytes": 12192,
+      "sha256": "a7d6c845968081d12632c16c421550eb4ab667dbea9f36fd16df235d17679713"
+    },
+    {
+      "path": "expressionMeanings/3.json",
+      "table": "expressionMeanings",
+      "count": 50,
+      "bytes": 9793,
+      "sha256": "a4afa5516c626396084a1e91e4b7cae7fad76259624ad86b59542624c888ff80"
+    },
+    {
+      "path": "expressionMeanings/4.json",
+      "table": "expressionMeanings",
+      "count": 51,
+      "bytes": 10203,
+      "sha256": "8d02d1fa462f532aaa8b45cd445219de95b5762f52c73445193a56a12af3b926"
+    },
+    {
+      "path": "expressionMeanings/5.json",
+      "table": "expressionMeanings",
+      "count": 53,
+      "bytes": 11126,
+      "sha256": "0f7afe8c8dd726c443c3d4cbc860177b965f5794148b2b053d8ffa6e85b23bf3"
+    },
+    {
+      "path": "expressionMeanings/6.json",
+      "table": "expressionMeanings",
+      "count": 49,
+      "bytes": 10593,
+      "sha256": "9a903f8cc5774df1423c09a54c35068d4a376e702763b059e84a257132f41c73"
+    },
+    {
+      "path": "expressionMeanings/7.json",
+      "table": "expressionMeanings",
+      "count": 44,
+      "bytes": 8782,
+      "sha256": "cfb32914ae643a340a478c8683dd239177c4e3c84fd5efcdeed1fbd9b2f96087"
+    },
+    {
+      "path": "expressionMeanings/8.json",
+      "table": "expressionMeanings",
+      "count": 55,
+      "bytes": 11572,
+      "sha256": "f0b5aca2e0fa8041387d7e49dbd90265491174f9ca18a8f9307e1a04ea0231a1"
+    },
+    {
+      "path": "expressionMeanings/9.json",
+      "table": "expressionMeanings",
+      "count": 41,
+      "bytes": 8570,
+      "sha256": "cfacf166c3785bef9494961ffc761c8f971022426ab770dcfa341b29db3c8054"
+    },
+    {
+      "path": "expressionMeanings/a.json",
+      "table": "expressionMeanings",
+      "count": 51,
+      "bytes": 9850,
+      "sha256": "5310f15c735df2562e20ee06a4c0d99feb36489f89cc0f4d6a64b0e8ee595e0c"
+    },
+    {
+      "path": "expressionMeanings/b.json",
+      "table": "expressionMeanings",
+      "count": 57,
+      "bytes": 11898,
+      "sha256": "ad818e0cf1cc3c8fceec4474d7457fc5c9a186de1e1b60e2b61b350e2a88c9ec"
+    },
+    {
+      "path": "expressionMeanings/c.json",
+      "table": "expressionMeanings",
+      "count": 46,
+      "bytes": 9314,
+      "sha256": "147152e00beed2d82eec3836a7cfe17be021909721267477fe1c18c95cad7216"
+    },
+    {
+      "path": "expressionMeanings/d.json",
+      "table": "expressionMeanings",
+      "count": 50,
+      "bytes": 9595,
+      "sha256": "709b150835425c10fdd7ffcd681a3038aecc74389c2a720d2563b4a89480f02a"
+    },
+    {
+      "path": "expressionMeanings/e.json",
+      "table": "expressionMeanings",
+      "count": 43,
+      "bytes": 8766,
+      "sha256": "e294b33f2bffb7d9b5096c107e615347dad227d6d4a4dda534bb600c7c05d6c4"
+    },
+    {
+      "path": "expressionMeanings/f.json",
+      "table": "expressionMeanings",
+      "count": 51,
+      "bytes": 10252,
+      "sha256": "099d90232f76de3d066171a67a7a59b25ff6db66cc7d7581e1e4b8f8801b31cc"
+    },
+    {
+      "path": "expressionExamples/0.json",
+      "table": "expressionExamples",
+      "count": 330,
+      "bytes": 89955,
+      "sha256": "d6528873fe9e5ae76f826c106d14f4564cf19cc4ca16d9fb13da5a5cca37dbbb"
+    },
+    {
+      "path": "expressionExamples/1.json",
+      "table": "expressionExamples",
+      "count": 296,
+      "bytes": 78018,
+      "sha256": "b0570c427f704280ab6d8dffae1d7b8aba448508df83d703b69cba14a4d84ea4"
+    },
+    {
+      "path": "expressionExamples/2.json",
+      "table": "expressionExamples",
+      "count": 304,
+      "bytes": 81499,
+      "sha256": "ce3a5c401a3153da4e5e6eec95ae52b9d2a3bf196d086e4e24837929273936b7"
+    },
+    {
+      "path": "expressionExamples/3.json",
+      "table": "expressionExamples",
+      "count": 299,
+      "bytes": 82260,
+      "sha256": "cfe0dfb6a91f74c0ee32d03c30fa003734c5ed4a63e5b7a07af03c64335c82f3"
+    },
+    {
+      "path": "expressionExamples/4.json",
+      "table": "expressionExamples",
+      "count": 295,
+      "bytes": 79220,
+      "sha256": "f15cfa8fbf84b05d990ecb59f802e73fbbcc1365caf77379d8277802d1377bef"
+    },
+    {
+      "path": "expressionExamples/5.json",
+      "table": "expressionExamples",
+      "count": 290,
+      "bytes": 77275,
+      "sha256": "ac26be13575bf0beeb378e2d9a6487b1f3a6777a833d3c1c9e441914d5a801c6"
+    },
+    {
+      "path": "expressionExamples/6.json",
+      "table": "expressionExamples",
+      "count": 344,
+      "bytes": 93954,
+      "sha256": "d31fd34e7d4f534a84e663b4c0024e315b499cbc71b0eead31685f8ca6699571"
+    },
+    {
+      "path": "expressionExamples/7.json",
+      "table": "expressionExamples",
+      "count": 283,
+      "bytes": 75776,
+      "sha256": "5835d6d772aeb68e859dbc44536337c3fa5ab640ed54f2613f0070e09aaf075c"
+    },
+    {
+      "path": "expressionExamples/8.json",
+      "table": "expressionExamples",
+      "count": 266,
+      "bytes": 72040,
+      "sha256": "bb79a766b0ec8c86075a6dc49538c13ecba996d93dd70d0088594134a6deab4f"
+    },
+    {
+      "path": "expressionExamples/9.json",
+      "table": "expressionExamples",
+      "count": 298,
+      "bytes": 81242,
+      "sha256": "36311794e319a11323357c59282167963f8f5ed3fc91d94aff0f7cdc3fa8720c"
+    },
+    {
+      "path": "expressionExamples/a.json",
+      "table": "expressionExamples",
+      "count": 305,
+      "bytes": 82328,
+      "sha256": "e9d983afa672f270443feb41e855dcddbc999429727e4ea76886d075bf8326b9"
+    },
+    {
+      "path": "expressionExamples/b.json",
+      "table": "expressionExamples",
+      "count": 337,
+      "bytes": 89498,
+      "sha256": "50a76ad1f1c43d2a33faf6023d77d17103f39aa1def4f0bfb2ef0c0bdaaf6be1"
+    },
+    {
+      "path": "expressionExamples/c.json",
+      "table": "expressionExamples",
+      "count": 297,
+      "bytes": 79578,
+      "sha256": "8f543fc2b6f165f9b2977881ace0bc269095d6b85d844eef2d05a742516f850b"
+    },
+    {
+      "path": "expressionExamples/d.json",
+      "table": "expressionExamples",
+      "count": 323,
+      "bytes": 87489,
+      "sha256": "cfe1df0834b28bb7143e37c9fe1a715b21cdddc2faf2d371d8ac80ebc303dc04"
+    },
+    {
+      "path": "expressionExamples/e.json",
+      "table": "expressionExamples",
+      "count": 285,
+      "bytes": 77106,
+      "sha256": "0635170bb963be7eb55cd708423bb8866629a35909f0862d203b6003349b5bfd"
+    },
+    {
+      "path": "expressionExamples/f.json",
+      "table": "expressionExamples",
+      "count": 316,
+      "bytes": 85306,
+      "sha256": "bf1b9c6644eaf77ec01ecdd1e1f0a7d3b64175b5bf4b6e8237d0c2525668ac29"
+    },
+    {
+      "path": "wiktionaryExistence/0.json",
+      "table": "wiktionaryExistence",
+      "count": 84998,
+      "bytes": 2352810,
+      "sha256": "b5f13f2924149e2c880759e5c3d6d75d42870e917cb603a7dfcf1fdade5eb02a",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/1.json",
+      "table": "wiktionaryExistence",
+      "count": 84806,
+      "bytes": 2348055,
+      "sha256": "8471aa45158347f1473631ece011fba334c278107cd32464c06c5d78a50bac0a",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/2.json",
+      "table": "wiktionaryExistence",
+      "count": 84837,
+      "bytes": 2348246,
+      "sha256": "718ce5e34ea44d0dfaeeac81ca0931708298a3835ff34878329b940bc73ea19f",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/3.json",
+      "table": "wiktionaryExistence",
+      "count": 84988,
+      "bytes": 2348822,
+      "sha256": "e489b39a2be1e6d36ef214e2aa02f27d7e531d903ad5b10f31af141001d0961f",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/4.json",
+      "table": "wiktionaryExistence",
+      "count": 84189,
+      "bytes": 2334871,
+      "sha256": "a11e7e421dc1670140530a38913581706fe19fd852cc55a3735cb2d4693388d6",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/5.json",
+      "table": "wiktionaryExistence",
+      "count": 84932,
+      "bytes": 2351290,
+      "sha256": "994e0c5cecf47a3c941f26e8bf937f4957d77bfaf84bc0b6e9b3392a7753a013",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/6.json",
+      "table": "wiktionaryExistence",
+      "count": 84799,
+      "bytes": 2343358,
+      "sha256": "d313386d904a16aba9a499250195dd7add8f8ea8eedb9c4c1dd5be5d8e52f916",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/7.json",
+      "table": "wiktionaryExistence",
+      "count": 84136,
+      "bytes": 2329822,
+      "sha256": "9b7ede3eb52d9c2892069f272a4d4d2557a53b9ed71aa34b84e19d87b8daba2d",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/8.json",
+      "table": "wiktionaryExistence",
+      "count": 84821,
+      "bytes": 2345621,
+      "sha256": "b1767c82fc07e9f99153d0bcb6e7c1d894c787e25e69d85d2499e64437f21130",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/9.json",
+      "table": "wiktionaryExistence",
+      "count": 84690,
+      "bytes": 2347246,
+      "sha256": "800bde0982d24779a432112c9a7b0e8ef710ff860fcb9133181fb5ff0aae598f",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/a.json",
+      "table": "wiktionaryExistence",
+      "count": 84200,
+      "bytes": 2330869,
+      "sha256": "3429a3864c0c9730a1ceca0d9a44eb87f74a2ab6183f33baf28ac187343cad66",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/b.json",
+      "table": "wiktionaryExistence",
+      "count": 84893,
+      "bytes": 2350737,
+      "sha256": "9e2a7fb863ab3636adcb982ccf97deaf5b573e13ef1083000a0c7164caa27d40",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/c.json",
+      "table": "wiktionaryExistence",
+      "count": 84555,
+      "bytes": 2339543,
+      "sha256": "708666f345171cb910d0eb61685409f8a1b6e347e5f1e361087fc302f3fffab8",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/d.json",
+      "table": "wiktionaryExistence",
+      "count": 84862,
+      "bytes": 2348604,
+      "sha256": "7b62a60c46a3dab7e4c8b9e7e4c5d24117d35b116699e74857cca3e87e8a7733",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/e.json",
+      "table": "wiktionaryExistence",
+      "count": 84680,
+      "bytes": 2342752,
+      "sha256": "12deaa03d1ca2cb82cab081ba35a37b6176aa611177929d4add8d17ced5f300a",
+      "encoding": "existence-tuple-v1"
+    },
+    {
+      "path": "wiktionaryExistence/f.json",
+      "table": "wiktionaryExistence",
+      "count": 85451,
+      "bytes": 2363757,
+      "sha256": "fabeacd0da572582098afe95450d94a2f9a1d747ccb50f87e29e772bfe47954b",
+      "encoding": "existence-tuple-v1"
+    }
+  ]
+}

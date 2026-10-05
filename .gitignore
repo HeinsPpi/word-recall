@@ -1,0 +1,16 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.playwright/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.env*
+.DS_Store
+data/raw/kaikki*
+data/raw/*.csv
+data/raw/*.jsonl
+data/raw/*.gz
+data/raw/*.part

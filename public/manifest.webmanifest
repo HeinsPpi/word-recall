@@ -1,0 +1,16 @@
+{
+  "name": "WordRecall — 英単語の定着",
+  "short_name": "WordRecall",
+  "description": "辞書データだけを使い、FSRSで必要最小限に復習する英単語学習PWA",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#f7f8fa",
+  "background_color": "#f7f8fa",
+  "icons": [
+    { "src": "pwa-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "pwa-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "maskable-icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

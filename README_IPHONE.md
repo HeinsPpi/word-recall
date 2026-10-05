@@ -1,0 +1,28 @@
+# iPhoneでWordRecallを使う
+
+WordRecallはWebサイトとして配布するPWAです。Xcode、Swift、Apple Developer Program、Apple Developer署名、App Store申請、7日ごとの再署名はすべて不要です。
+
+## GitHub Pagesへ公開
+
+1. このフォルダをGitHubのリポジトリへpushします。実用前に [README_DATA.md](README_DATA.md) に従い実辞書を生成してください。
+2. GitHubのリポジトリで **Settings → Pages** を開き、Sourceを **GitHub Actions** にします。
+3. `main` branchへpushします。Actionsの **Test and deploy PWA** が緑色になれば公開完了です。
+4. **Settings → Pages** 上部の `https://USERNAME.github.io/REPOSITORY/` が利用URLです。
+
+## ホーム画面へ追加
+
+1. iPhone 14の**Safari**でPages URLを開きます。ChromeなどではなくSafariを使います。
+2. 初回だけ「辞書データを準備しています」が表示されます。Wi‑Fi接続のまま完了まで待ちます。途中で失敗しても以前の辞書と学習データは消えません。
+3. Safari下部の共有ボタン（四角から上向き矢印）を押します。
+4. メニューを下へ送り、**ホーム画面に追加**を押します。
+5. アプリ名が「WordRecall」になっていることを確認し、右上の**追加**を押します。
+6. Safariを閉じ、ホーム画面のWordRecallアイコンから起動します。アドレスバーのないstandalone表示になります。
+7. 一度起動した後、機内モードにしてホーム画面から再起動します。検索、学習、統計、単語詳細が開けばoffline準備は完了です。
+
+## 日常利用とバックアップ
+
+単語帳で知らない語が出たときだけ「単語を追加」で検索し、出典付き情報と必要な熟語を選んで登録します。「学習」はFSRSが出した期限の項目と新規項目だけを表示します。発音は端末に入っている英語voiceを使用し、自動再生しません。
+
+Safari/iOSの端末ストレージは、空き容量不足などで削除される可能性があります。月に一度ほど **設定 → 学習データをバックアップ** を押し、ファイルアプリやiCloud Driveへ保存してください。復元は **バックアップを復元** からJSONを選びます。検証が成功するまで既存データは削除されません。
+
+更新通知は学習中に強制reloadしません。「学習終了後に更新」を押した時だけ新しいapp shellへ切り替わります。辞書が端末から消えた場合は再インストール画面になりますが、学習履歴DBは削除されません。

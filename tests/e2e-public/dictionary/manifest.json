@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "dictionaryVersion": "e2e-fixture-1",
+  "buildDate": "2026-10-05T00:00:00Z",
+  "wordCount": 3,
+  "expressionCount": 3,
+  "existenceIndexCount": 1,
+  "exampleCount": 2,
+  "totalBytes": 2973,
+  "shards": [
+    {"path":"words/00.json","table":"words","count":3,"bytes":623,"sha256":"219f3be78074f69748c9f379892a22b4ee5d0d783bd38937f565bb20de355ccb"},
+    {"path":"meanings/00.json","table":"meanings","count":2,"bytes":217,"sha256":"1743d5daca734e73847b8e37f633e7652f1d891c554d032a136b577a224fecda"},
+    {"path":"definitions/00.json","table":"definitions","count":2,"bytes":234,"sha256":"9401fd37b3dc96739fb89e68fff6336081aaf600474e0c7a42ae7f2f7fad2e87"},
+    {"path":"pronunciations/00.json","table":"pronunciations","count":2,"bytes":176,"sha256":"f0d22d54e63e73e0d12a9b917587aa790b81f0c0e03891ea7f3a1e5f8ef1f158"},
+    {"path":"wordForms/00.json","table":"wordForms","count":1,"bytes":141,"sha256":"d2e07a0a4ebb84a2375ed61450f7265f0c1101e70ef90e0f75b9170b39b2d15a"},
+    {"path":"examples/00.json","table":"examples","count":1,"bytes":228,"sha256":"4c834955200312d578e9e27d5f8571812992a7edbafb18ae359826ea6d6d9a41"},
+    {"path":"expressions/00.json","table":"expressions","count":3,"bytes":649,"sha256":"238a33844a35a644f4bba3943af6b692d45d1fbf2c18a2d3bcf81efc2b350e39"},
+    {"path":"expressionWords/00.json","table":"expressionWords","count":3,"bytes":190,"sha256":"ae06f59568df38e2dfc5cd9e0836ae37f3c709fda09a6f758578e475ddaf76b1"},
+    {"path":"expressionMeanings/00.json","table":"expressionMeanings","count":2,"bytes":226,"sha256":"0ddfc09b5c6a2520770e934030820a668fab07356c17098217d23d0b2702ca41"},
+    {"path":"expressionExamples/00.json","table":"expressionExamples","count":1,"bytes":207,"sha256":"38752b89c10d8d785be976f34eff830e3199021228c4b58d7490d6a1c0d58dd2"},
+    {"path":"wiktionaryExistence/00.json","table":"wiktionaryExistence","count":1,"bytes":82,"sha256":"d8bb980206e9113e7f7ce6b7e70969de56bb613e2b596e099bca2fad49e37a71"}
+  ]
+}

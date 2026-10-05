@@ -1,0 +1,11722 @@
+{
+  "CEFR-J word count": 7799,
+  "Octanove count": 2136,
+  "DiQt count": 7799,
+  "PHRASE count": 501,
+  "PHaVE count": 150,
+  "Wiktionary detailed count": 8309,
+  "Wiktionary existence count": 1355837,
+  "combined words": 8518,
+  "combined expressions": 738,
+  "examples": 112324,
+  "meanings": 8447,
+  "definitions": 78568,
+  "duplicates": 53224,
+  "conflicts": [
+    {
+      "lemma": "above",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "above",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "access",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "account",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "ache",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "act",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "address",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "advance",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "after",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "after",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "aim",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "alarm",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "alcoholic",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "all",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "all",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "alone",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "along",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "another",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "antique",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "appeal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "approach",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "arm",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "around",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "as",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "assistant",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "attempt",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "award",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "balance",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bank",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bar",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "barbecue",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bare",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bargain",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bark",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "base",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bat",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bear",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "beat",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "before",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "benefit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "besides",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "better",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bill",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "blame",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "blend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "block",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "blow",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "blush",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "board",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bold",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "book",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bother",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bottle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bounce",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bow",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bowl",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "brake",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "branch",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "break",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "breed",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "broadcast",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "brown",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "budget",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "burden",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "burn",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "but",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "butcher",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "call",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "camp",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "can",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "care",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "cause",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "challenge",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "characteristic",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "chase",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "chat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "check",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "chemical",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "chief",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "circle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "claim",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "classic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "clear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "click",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "climb",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "coach",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "coast",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "collapse",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "comb",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "comment",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "commercial",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "complete",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "compromise",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "concern",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "conduct",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "content",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "control",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "cool",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "copy",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "correct",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cough",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "count",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "counter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "cover",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "cream",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "criminal",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "cruise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "cure",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cut",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "date",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "deal",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "dear",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "decline",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "deep",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "defeat",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "delay",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "delight",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "deposit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "design",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "designer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "desire",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "dig",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "direct",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "dislike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "display",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "divide",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "double",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "double",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "doubt",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "down",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "down",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "download",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "downstairs",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "draw",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "dream",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "dress",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "drive",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "drop",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "dry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "early",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "encounter",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "end",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "envy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "equal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "equal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "escape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "estimate",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "even",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "exchange",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "excuse",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "exercise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "experience",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "experiment",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "expert",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "express",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "extra",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "face",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "faint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fair",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fall",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "fancy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fancy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "far",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "fat",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "feature",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "feed",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "feel",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "fellow",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "female",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "few",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "file",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "film",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "finance",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fire",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fish",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fit",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fit",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fix",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "flash",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flash",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "float",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "flood",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "focus",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "following",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fool",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "for",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "force",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "form",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "frame",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "free",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "free",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "front",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "fry",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "function",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "further",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "future",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "go",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "gold",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "good",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "gossip",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "grade",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "graduate",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "green",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "group",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "guarantee",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "guard",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "guess",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hammer",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "hand",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "handle",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hang",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "harm",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hate",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "haunt",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "head",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "heat",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "help",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "high",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "highlight",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hold",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "home",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "honor/honour",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "hope",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hug",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "human",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hurry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hurt",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "in",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "inch",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "increase",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "individual",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "influence",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "initial",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "inside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "inside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "interest",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "interview",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "issue",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "it",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "jam",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "jog",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "joint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "joke",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "judge",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "jump",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "kid",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "kind",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "kindly",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "kiss",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "knock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "lack",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "land",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "last",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "last",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "later",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "latter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "latter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "laugh",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "lead",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "lean",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "leap",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "least",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "least",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "leave",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "left",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "left",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "level",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "level",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "lie",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "light",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "like",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "like",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "line",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "list",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "little",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "little",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "live",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "living",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "load",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "lock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "long",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "lot",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "luxury",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "mail",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "major",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "make",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "male",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "march",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "march",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "market",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "mass",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "match",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "matter",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mean",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "mean",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mention",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "mess",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "middle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mind",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mine",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mix",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mobile",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "model",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "moral",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "more",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "more",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "most",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mount",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "move",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "murder",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "musical",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "name",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "near",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "need",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "need",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "net",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "next",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "nod",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "notice",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "now",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "nurse",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "object",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "objective",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "off",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "off",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "official",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "on",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "once",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "one",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "opposite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "opposite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "oral",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "order",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "original",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "other",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "outline",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "outside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "outside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "over",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "overseas",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "own",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "own",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "panic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pardon",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "park",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "part",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "past",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "past",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "patient",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "photograph",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pick",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "picture",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pin",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "pink",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "place",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plan",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plant",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plastic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "please",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plenty",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plug",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "plus",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "plus",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "point",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "poison",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pop",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "post",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "potential",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "pound",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "powder",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "praise",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "present",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "present",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pretend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "pretty",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "price",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "principal",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "print",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "process",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "professional",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "program/programme",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "progress",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "promise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "protest",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "public",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "purple",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "push",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "quality",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "question",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "queue",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "quiet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "quit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "range",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "rap",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "rate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "reach",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "record",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "red",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "regard",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "regret",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "release",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "remark",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "reply",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "report",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "request",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "research",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "resident",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "result",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "review",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "reward",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "riddle",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "right",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "ring",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "risk",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "roast",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "rock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "roll",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "room",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "row",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "ruin",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "rule",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "rush",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "safeguard",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "saw",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "say",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "scan",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "schedule",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "scratch",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "scream",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "screen",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "screw",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "search",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "secret",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "select",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sense",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sentence",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "separate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "set",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "shadow",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shake",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "share",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "sharp",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shell",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shift",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "ship",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shop",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shout",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "show",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "shower",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shut",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sigh",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sign",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "since",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "since",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "single",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sink",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "skate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "ski",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sleep",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "slice",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "slide",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "slight",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "slow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "slow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "smell",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "smile",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "smoke",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sneeze",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "snow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "so",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "soil",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sort",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sound",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sound",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "speed",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "spell",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "splash",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "split",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "split",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sponsor",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "spot",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "spread",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stamp",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stand",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "standard",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "star",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "state",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "stay",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "step",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "stick",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "still",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "store",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "straight",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "strain",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stress",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "strike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "strip",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "struggle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "study",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "stuff",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "substitute",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "supply",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "support",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sure",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "surf",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "surprise",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "suspect",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sweat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sweet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "take",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "talk",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "tap",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tease",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "telephone",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "terrorist",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "test",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "thirst",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "though",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "through",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "throw",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "tie",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "till",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "time",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tip",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tonight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "top",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "touch",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tour",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "trace",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "track",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trade",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trail",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "train",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "transfer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "transport",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "travel",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "treat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trick",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trip",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trouble",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "trust",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "try",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "type",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "underline",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "underneath",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "underwater",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "unlike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "until",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "up",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "update",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "upset",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "upstairs",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "urge",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "use",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "value",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "very",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "view",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "volunteer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "vote",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "wait",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "wake",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "want",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "warm",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "water",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wave",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "whatever",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "whichever",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "while",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "whisper",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "whistle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "whole",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "will",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "win",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "wind",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wire",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wish",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "witness",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "wonder",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "worldwide",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "worry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "worse",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "worst",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "worst",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "wound",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wrong",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "yell",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "yet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "above",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "above",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "after",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "all",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "all",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "alone",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "around",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "as",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "being",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "blow",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "break",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "cream",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "cut",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "down",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "draw",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "drop",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "early",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "exercise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "feel",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "flat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "focus",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "for",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "future",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "go",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "guess",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "help",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "home",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "hurt",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "in",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "inside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "it",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "judge",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "jump",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "kind",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "later",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "laugh",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "leave",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "like",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "like",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "live",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "make",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mean",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mine",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "mobile",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "more",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "more",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "most",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "near",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "on",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "outside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "over",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "past",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "past",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "pick",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "present",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "purple",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "push",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "ring",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "say",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "set",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "share",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "show",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "sleep",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "so",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "stay",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "step",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "straight",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "study",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "take",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "talk",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "that",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "through",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "top",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "travel",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "until",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "up",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "use",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "very",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "wait",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "want",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "win",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A1"
+      ]
+    },
+    {
+      "lemma": "along",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "another",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bank",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bear",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "before",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "better",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "blame",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "bother",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "brown",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "budget",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "call",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "camp",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "can",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "cause",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "chat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "check",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "claim",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "click",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "climb",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "copy",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "count",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "cover",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "cry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "deep",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "divide",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "down",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "download",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "downstairs",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "dream",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "dress",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "drive",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "dry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "end",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "even",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "expert",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "face",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "fall",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "far",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "free",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "front",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "function",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "gold",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "graduate",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "green",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "half",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hand",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "harm",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hate",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "head",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "high",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hold",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hug",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "hurry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "increase",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "inside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "land",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "last",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "last",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "latter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "latter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "lead",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "least",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "left",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "left",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "level",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "lie",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "long",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "lot",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "male",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "matter",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "middle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mind",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "mix",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "model",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "move",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "need",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "off",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "one",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "order",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "other",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "outside",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "overseas",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "own",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "park",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "patient",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "pink",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "plus",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "point",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "post",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "pretend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "pretty",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "print",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "public",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "quality",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "quit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "reach",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "record",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "red",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "regret",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "right",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "roast",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "ruin",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "secret",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "shut",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "since",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "smoke",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "snow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sound",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sound",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "spell",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "splash",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "stand",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "state",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "still",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sure",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "surf",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sweat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "sweet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "telephone",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "though",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "throw",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "till",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "tonight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "train",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "trust",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "try",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "upstairs",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "wish",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "wonder",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "worldwide",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "worry",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "wrong",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "A2"
+      ]
+    },
+    {
+      "lemma": "account",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "act",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "address",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "advance",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "after",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "alarm",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "antique",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "arm",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "assistant",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "attempt",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "award",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "back",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bar",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "barbecue",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "base",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bat",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "beat",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "besides",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bill",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "blend",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "block",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "board",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "book",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bounce",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "bowl",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "branch",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "breed",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "burn",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "but",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "care",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "characteristic",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "chemical",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "circle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "clear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "coast",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "complete",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "content",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "control",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "cough",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "counter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "criminal",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "date",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "deal",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "defeat",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "delay",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "design",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "designer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "dig",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "direct",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "dislike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "display",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "either",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "escape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "estimate",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "exchange",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "excuse",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "experience",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "express",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "extra",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fair",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fancy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fancy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "feed",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fellow",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "few",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "film",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "finance",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fish",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fit",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fix",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "float",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "flood",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fool",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "form",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "fry",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "further",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "group",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "handle",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hang",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "heat",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "highlight",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "hope",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "human",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "initial",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "interest",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "interview",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "jog",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "joke",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "kid",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "kindly",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "kiss",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "knock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "leap",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "light",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "little",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "little",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "lock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "luxury",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "mail",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "march",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "march",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "market",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "match",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "mention",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "moral",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "murder",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "name",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "net",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "notice",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "nurse",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "objective",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "off",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "opposite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "opposite",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "oral",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "outline",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "own",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "pardon",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "pin",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "place",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plan",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plant",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plastic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "please",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "plenty",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "potential",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "program/programme",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "promise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "rap",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "regard",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "release",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "remark",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "reply",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "report",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "request",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "result",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "riddle",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "room",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "rush",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "scream",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "search",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "second",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shadow",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shake",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shift",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "ship",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shop",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "shout",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sign",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "since",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "single",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "sink",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "skate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "ski",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "slight",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "slow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "slow",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "smell",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "smile",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "soil",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "speed",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "split",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "standard",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "star",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "stick",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "strike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "support",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "surprise",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "terrorist",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "thirst",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tie",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "touch",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "tour",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "transfer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "trouble",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "type",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "underline",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "underneath",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "update",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "view",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "volunteer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "vote",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "wake",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "warm",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "wave",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "whatever",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "while",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "whole",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "witness",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "worst",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "yet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B1"
+      ]
+    },
+    {
+      "lemma": "access",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "ache",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "aim",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "alcoholic",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "appeal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "approach",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "balance",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bare",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bargain",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bark",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "benefit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "blush",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bold",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bottle",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "bow",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "brake",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "broadcast",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "burden",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "butcher",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "challenge",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "chase",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "chief",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "classic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "coach",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "collapse",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "comb",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "comment",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "commercial",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "compromise",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "concern",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "conduct",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cool",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "correct",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cruise",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "cure",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "dear",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "decline",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "delight",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "deposit",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "desire",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "double",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "double",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "doubt",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "encounter",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "envy",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "equal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "equal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "experiment",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "faint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fat",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fear",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "feature",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "female",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "file",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fine",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fire",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "fit",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flash",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flash",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "flat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "following",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "force",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "frame",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "free",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "good",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "gossip",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "grade",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "guarantee",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "guard",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "hammer",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "haunt",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "honor/honour",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "inch",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "individual",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "influence",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "issue",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "jam",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "joint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "lack",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "lean",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "least",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "level",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "line",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "list",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "living",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "load",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "major",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "mass",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "mean",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "mess",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "mount",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "musical",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "need",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "next",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "nod",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "now",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "object",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "official",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "once",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "original",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "panic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "part",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "photograph",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "picture",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "plug",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "plus",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "poison",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pop",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "pound",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "powder",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "praise",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "present",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "price",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "principal",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "process",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "professional",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "progress",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "protest",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "question",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "queue",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "quiet",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "range",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "rate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "research",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "resident",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "review",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "reward",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "risk",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "rock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "roll",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "round",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "row",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "rule",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "safeguard",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "saw",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "scan",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "schedule",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "scratch",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "screen",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "screw",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "select",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sense",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sentence",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "separate",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sharp",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shell",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shock",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "shower",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sigh",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "slice",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "slide",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sneeze",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sort",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "split",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "sponsor",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "spot",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "spread",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stamp",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "store",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "strain",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stress",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "strip",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "struggle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "stuff",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "substitute",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "supply",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "suspect",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tap",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tease",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "test",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tight",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "time",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "tip",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trace",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "track",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trade",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trail",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "transport",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "treat",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trick",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "trip",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "underwater",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "unlike",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "upset",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "urge",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "value",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "water",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "welcome",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "whichever",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "whisper",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "whistle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "will",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wind",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wire",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "worse",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "worst",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "wound",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "yell",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "B2"
+      ]
+    },
+    {
+      "lemma": "complexity",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "wing",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "conceive",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "conceivable",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "rally",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "humble",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "humble",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "brief",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "cast",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "cast",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "cast",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "stock",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "house",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "hanging",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "hanging",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "tomb",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "class",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "lap",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "craft",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "dependent",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "puzzle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "exploit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "fit",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "drive",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "drive",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "pupil",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "withdrawal",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "talkative",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "awe",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "pace",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "recite",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "ecstasy",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "ecstatic",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "nature",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "splatter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "automatic",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "automatically",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "exhaust",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "calf",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "bald",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "boast",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "scramble",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "shed",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "absolute",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "dispensable",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "indispensable",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "burst",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "tune",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "innovation",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "innovative",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "institute",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "angle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "pose",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "jog",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "paddle",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "expedition",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "resort",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "resort",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "commission",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "commission",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "landscape",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "bloom",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "engineer",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "contract",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "contract",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "query",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "frost",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "man",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "desert",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "recall",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "recollection",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "usher",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "voice",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "tread",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "allegation",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "condition",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "tone",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "ground",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "exotic",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "rich",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "stagger",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "firm",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "harbor/harbour",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "battery",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "anchor",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "sketch",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "refresh",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "behind",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "launch",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "plague",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "orphan",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "personification",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "perfect",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "signal",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "imperative",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "imperative",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "campaign",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "contest",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "lodge",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "launch",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "till",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "aboard",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "drill",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "drill",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "harvest",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "chart",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C1"
+      ]
+    },
+    {
+      "lemma": "envisage",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "marvel",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "outpatient",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "apprentice",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "quirk",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "deliberate",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "brief",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "utility",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "poise",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "predecessor",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "ally",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "utter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "utter",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "indulge",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "daunt",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "daunting",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "circuit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "exact",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "tedium",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "succeed",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "repute",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "articulate",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "posture",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "pluck",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "graft",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "adorn",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "idle",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "deprivation",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "familiarize/familiarise",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "envisage",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "contextual",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "contextually",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "adverse",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "adversely",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "secure",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "phase",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "plum",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "notorious",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "posture",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "deficit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "dive",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "maneuver/manoeuvre",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "maneuver/manoeuvre",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "mere",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "mold/mould",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "abolish",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "paralyze/paralyse",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "paralysis",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "preoccupy",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "audit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "audit",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "punctual",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "punctuality",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "curriculum",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "abundant",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "abundance",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "crystallize/crystallise",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "retrospect",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "tactile",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "vocalist",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "chronological",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "haven",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "tantamount",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "catastrophic",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "commission",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "commission",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "inert",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "lark",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "lark",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "soliloquy",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "wax",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "plane",
+      "field": "CEFR",
+      "values": [
+        "A1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "figurative",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "attainment",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "pedestrian",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "grumble",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "skim",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "barometer",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "strait",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "redundant",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "diligent",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "diligence",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "phantom",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "converse",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "converse",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "relinquish",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "resin",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "sedately",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "glint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "glint",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "venture",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "agency",
+      "field": "CEFR",
+      "values": [
+        "A2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "hazard",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "accessibility",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "exhibitionist",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "proliferate",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "advantageous",
+      "field": "CEFR",
+      "values": [
+        "C1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "cascade",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "cascade",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "formidable",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "wither",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "dwarf",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "hover",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "merger",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "temper",
+      "field": "CEFR",
+      "values": [
+        "B1",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "surge",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    },
+    {
+      "lemma": "surge",
+      "field": "CEFR",
+      "values": [
+        "B2",
+        "C2"
+      ]
+    }
+  ],
+  "invalid rows": [],
+  "final bytes": 95661879,
+  "shard count": 176,
+  "validation": {
+    "valid": true,
+    "errors": [],
+    "warnings": [],
+    "validatedShards": 176
+  }
+}
