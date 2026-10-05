@@ -21,7 +21,7 @@ export function App() {
   const [runtimeError, setRuntimeError] = useState<string | null>(null)
   const { needRefresh: [needRefresh, setNeedRefresh], updateServiceWorker } = useRegisterSW({ onRegisterError: () => setRuntimeError('オフライン機能の更新に失敗しました。オンライン時に再読み込みしてください。') })
   useEffect(() => { void dictionaryAvailable().then(setReady).catch(() => setReady(false)) }, [])
-  useEffect(() => { if (!ready) return; void Promise.all([fetchManifest(), ensureSettings()]).then(([manifest, settings]) => { if (settings.dictionaryVersion && manifest.dictionaryVersion !== settings.dictionaryVersion) setDictionaryUpdate(manifest) }).catch(() => undefined) }, [ready])
+  useEffect(() => { if (!ready || !navigator.onLine) return; void Promise.all([fetchManifest(), ensureSettings()]).then(([manifest, settings]) => { if (settings.dictionaryVersion && manifest.dictionaryVersion !== settings.dictionaryVersion) setDictionaryUpdate(manifest) }).catch(() => undefined) }, [ready])
   if (ready === null) return <div className="app-loading"><div className="spinner"/></div>
   if (!ready) return <SetupPage onReady={() => setReady(true)}/>
   let content
