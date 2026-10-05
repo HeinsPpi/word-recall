@@ -1,5 +1,7 @@
 # WordRecall
 
+公開PWA: https://heinsppi.github.io/word-recall/
+
 WordRecallは、既存の単語帳で分からなかった英単語だけを登録し、英語定義・英文クローズ・熟語クローズによるactive recallとFSRSで長期記憶への定着を支える、端末内完結型PWAです。ゲーム的なXPや連続記録はありません。
 
 ## 設計

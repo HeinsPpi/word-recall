@@ -2,6 +2,8 @@
 
 WordRecallはWebサイトとして配布するPWAです。Xcode、Swift、Apple Developer Program、Apple Developer署名、App Store申請、7日ごとの再署名はすべて不要です。
 
+このリポジトリの公開URLは **https://heinsppi.github.io/word-recall/** です。
+
 ## GitHub Pagesへ公開
 
 1. このフォルダをGitHubのリポジトリへpushします。実用前に [README_DATA.md](README_DATA.md) に従い実辞書を生成してください。
