@@ -20,6 +20,7 @@ function authMessage(error: unknown): string {
 export function AccountSection() {
   const [session, setSession] = useState<Session | null>(null)
   const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState<SyncStatus>({
@@ -59,7 +60,22 @@ export function AccountSection() {
       setBusy(false)
     }
   }
-  async function sendOtp(): Promise<void> {
+  async function signIn(): Promise<void> {
+    if (!supabase) return
+    if (!email.trim() || password.length < 12) {
+      setMessage('メールアドレスと12文字以上の同期用パスワードを入力してください。')
+      return
+    }
+    const { error } = await supabase.auth.signInWithPassword({
+      email: email.trim(),
+      password
+    })
+    if (error) throw error
+    setPassword('')
+    setMessage('ログインしました。端末間の同期を開始します。')
+    await synchronize()
+  }
+  async function sendPasswordSetupLink(): Promise<void> {
     if (!supabase) return
     if (!email.trim()) {
       setMessage('メールアドレスを入力してください。')
@@ -67,10 +83,20 @@ export function AccountSection() {
     }
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim(),
-      options: { shouldCreateUser: true, emailRedirectTo: redirectUrl() }
+      options: { shouldCreateUser: false, emailRedirectTo: redirectUrl() }
     })
     if (error) throw error
-    setMessage('ログインリンクを送りました。メール内のリンクを開いてください。')
+    setMessage('パスワード設定リンクを送りました。Safariで開いて設定してください。')
+  }
+  async function updatePassword(): Promise<void> {
+    if (!supabase || password.length < 12) {
+      setMessage('同期用パスワードは12文字以上にしてください。')
+      return
+    }
+    const { error } = await supabase.auth.updateUser({ password })
+    if (error) throw error
+    setPassword('')
+    setMessage('同期用パスワードを設定しました。')
   }
 
   if (!syncConfigured)
@@ -92,6 +118,24 @@ export function AccountSection() {
         <p className="muted">
           PCとiPhoneの学習データを同じアカウントで同期します。辞書本体は各端末に保存されます。
         </p>
+        <label>
+          同期用パスワードを設定・変更
+          <input
+            type="password"
+            autoComplete="new-password"
+            minLength={12}
+            maxLength={128}
+            value={password}
+            onChange={(event) => setPassword(event.target.value)}
+          />
+        </label>
+        <button
+          className="secondary full"
+          disabled={busy || password.length < 12}
+          onClick={() => void run(updatePassword)}
+        >
+          パスワードを保存
+        </button>
         <dl>
           <div>
             <dt>同期状態</dt>
@@ -165,12 +209,30 @@ export function AccountSection() {
           onChange={(event) => setEmail(event.target.value)}
         />
       </label>
+      <label>
+        同期用パスワード
+        <input
+          type="password"
+          autoComplete="current-password"
+          minLength={12}
+          maxLength={128}
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
+        />
+      </label>
       <button
         className="primary full"
         disabled={busy || !navigator.onLine}
-        onClick={() => void run(sendOtp)}
+        onClick={() => void run(signIn)}
       >
-        ログインリンクを送る
+        ログインして同期
+      </button>
+      <button
+        className="secondary full"
+        disabled={busy || !navigator.onLine || !email.trim()}
+        onClick={() => void run(sendPasswordSetupLink)}
+      >
+        初回パスワード設定リンクを送る
       </button>
       {message && (
         <p className="form-message" role="status">

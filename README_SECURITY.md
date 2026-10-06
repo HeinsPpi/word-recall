@@ -2,19 +2,21 @@
 
 WordRecallは端末内IndexedDBを正本とし、Supabaseはパスワードレス認証と学習データ同期だけに使います。辞書、入力した回答文字列、応答時間、端末ID、Analyticsはクラウドへ送りません。
 
-## 初回アカウント作成後に必ず行うこと
+## iPhoneでの初回ログイン
 
-監査時点ではSupabase Authユーザーが0人だったため、初回アカウントを作れるようsignupを一時的に有効にしています。
+Safariとホーム画面PWAは認証storageが分かれるため、Magic LinkだけではPWAへsessionを渡せません。本アプリは初回だけSafariで同期用パスワードを設定し、その後は各端末のPWA内でメールアドレスとパスワードを入力します。
 
-1. 公開PWAの「設定」→「アカウントと同期」で自分のメールアドレスを入力する。
-2. 届いたMagic Linkを開き、Supabase Dashboardの **Authentication → Users** に自分の1ユーザーだけがあることを確認する。
-3. **Authentication → Sign In / Providers → Email**（UIによっては **Authentication → General Configuration**）で **Allow new users to sign up** をOFFにする。
-4. 以後、新規メールアドレスでは登録できず、作成済みアカウントだけがMagic Linkでログインできることを確認する。
+1. 元から使っているホーム画面PWAの「設定」→「アカウントと同期」でメールアドレスを入力する。
+2. 「初回パスワード設定リンクを送る」を押す。
+3. メール内のリンクをSafariで開く。辞書installより先に専用のパスワード設定画面が表示される。
+4. 12文字以上の同期用パスワードを設定し、Safariタブを閉じる。
+5. 元のホーム画面PWAへ戻り、同じメールアドレスと同期用パスワードでログインする。
 
-アプリには明示的なsignupボタン、パスワード入力、password resetはありません。Freeプランの標準メール送信ではOTPコード本文への変更が許可されないため、独自SMTPを増やさず標準Magic Linkを使用します。有効期限は10分です。
+新規signupとAnonymous Authは本番で無効化済みです。初回リンクは既存の1ユーザーにだけ送られ、有効期限は10分です。Freeプランの標準メール送信ではOTPコード本文への変更が許可されず、iOS PWAへMagic Link sessionも共有されないため、この一回限りのbridge方式を使用します。
 
 ## Dashboardで確認する項目
 
+- **Authentication → Sign In / Providers → Email → Allow new users to sign up**: OFF。監査後にOFFへ変更済み。
 - **Authentication → General Configuration → Allow anonymous sign-ins**: OFF。監査時にOFFを確認済み。
 - **Authentication → URL Configuration → Site URL**: `https://heinsppi.github.io/word-recall/`。
 - **Authentication → URL Configuration → Redirect URLs**: `https://heinsppi.github.io/word-recall/**`だけ。localhostと任意ドメインwildcardは残さない。

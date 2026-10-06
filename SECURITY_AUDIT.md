@@ -64,7 +64,7 @@
 
 **攻撃・障害シナリオと影響** 弱いpasswordや公開signupがaccount/DB quota abuseの入口になる。
 
-**修正方法・結果** password UIを全削除し、Supabase標準Magic Linkへ統一。有効期限を3600秒から600秒へ短縮し、redirectを本番URLだけにした。標準メールproviderではOTPテンプレート変更がFree tierで拒否されたため、未接続のOTP UIは採用していない。初回本人アカウント作成後のsignup無効化だけが手動作業として残る。
+**修正方法・結果** 新規signupを無効化し、既存の1ユーザーだけに限定。Magic Link有効期限を3600秒から600秒へ短縮し、redirectを本番URLだけにした。iOSではSafariとホーム画面PWAのsession storageが分離されるため、初回Magic Link先で12文字以上の同期用パスワードを設定し、その後PWA内で直接ログインする方式へ変更した。標準メールproviderではOTPテンプレート変更がFree tierで拒否されたため、未接続のOTP UIは採用していない。
 
 **確信度** High
 
@@ -122,7 +122,7 @@
 - Dependency: `npm audit` Critical/High/Medium/Lowすべて0。package specifierを実install versionへ固定。
 - XSS: unsafe DOM API、eval、dynamic runtime scriptなし。React text renderingを使用。
 - Service Worker: Supabase API/Auth responseのruntime cacheなし。
-- Quality gates: `npm ci`、lint、typecheck、production build成功。Vitest 35/35、Playwright 3 passed / 1 intentional skip（WebKit UI full-flow成功、WebKit offline emulationのみ非対応）、辞書91.2MB。
+- Quality gates: `npm ci`、lint、typecheck、production build成功。Vitest 37/37、Playwright 3 passed / 1 intentional skip（WebKit UI full-flow成功、WebKit offline emulationのみ非対応）、辞書91.2MB。
 
 ## チェック結果
 
@@ -131,7 +131,7 @@
 | Injection | ✅ | SQL文字列生成/RPCなし。Data API利用、DB制約追加 |
 | XSS | ✅ | unsafe DOM APIなし、React text rendering、CSPあり |
 | CSRF | ✅ | Cookie認証APIではなくBearer JWT/Data API。state-changing RESTはRLSで保護 |
-| 認証 | ⚠️ | password削除・Magic Link 10分。初回後のsignup OFFは手動 |
+| 認証 | ✅ | signup/匿名無効、初回Magic Link 10分、12文字以上の同期用パスワード |
 | 認可 | ✅ | FORCE RLS、owner CRUD、cross-user 18/18 test |
 | 入力Validation | ✅ | DB payload/ID/文字数/件数制約、backup上限 |
 | Secret管理 | ✅ | frontendはpublishable keyのみ、履歴/bundle scan 0 |
@@ -147,6 +147,6 @@
 
 ## 手動作業と残存判定
 
-唯一の必須手動作業は、最初の本人Magic Linkログイン後にSupabase Dashboardで新規signupをOFFにすること。監査時点はAuth user 0のため、締め出しを避けてONのままにした。手順は`README_SECURITY.md`に記載した。
+Auth userが1人作成されたことを確認後、新規signupを本番設定で無効化した。初回同期用パスワード設定の操作手順は`README_SECURITY.md`に記載した。
 
-総合評価は、signup無効化前は **C**、無効化後は **B**。Critical 0 / High 0 / Medium 4（修正済み3、手動完了待ち1）/ Low 1（修正済み）/ Info 4。
+総合評価は **B**。Critical 0 / High 0 / Medium 4（修正済み）/ Low 1（修正済み）/ Info 4。
