@@ -166,8 +166,9 @@ export function SettingsPage() {
       <section className="settings-section">
         <h2>データソースとライセンス</h2>
         <p>
-          CEFR-J、Octanove、DiQt、PHRASE、PHaVE、English Wiktionary / Kaikki /
-          Wiktextract、ts-fsrs。詳細は同梱の LICENSES.md と
+          CEFR-J、Octanove、DiQt、EJDict、Japanese
+          WordNet、FreeDict、JMdict、PHRASE、PHaVE、English / Japanese
+          Wiktionary・Kaikki / Wiktextract、ts-fsrs。詳細は同梱の LICENSES.md と
           THIRD_PARTY_NOTICES.md を参照してください。
         </p>
       </section>

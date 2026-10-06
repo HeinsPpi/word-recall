@@ -6,7 +6,8 @@ data/raw/source_config.json with {"filename": {"lemma": "actual_column", ...}}.
 Kaikki must be line-delimited JSON (optionally .gz) and is processed as a stream.
 """
 from __future__ import annotations
-import csv, datetime as dt, gzip, hashlib, html, json, os, re, shutil, sys, tempfile, unicodedata
+import csv, datetime as dt, gzip, hashlib, html, json, os, re, shutil, sqlite3, sys, tarfile, tempfile, unicodedata
+import xml.etree.ElementTree as ET
 from collections import defaultdict
 from pathlib import Path
 from typing import Any, Iterable
@@ -16,7 +17,7 @@ RAW = Path(os.environ.get("WORDRECALL_RAW_DIR", ROOT / "data/raw"))
 OUT = Path(os.environ.get("WORDRECALL_OUTPUT_DIR", ROOT / "public/dictionary"))
 REPORT_PATH = Path(os.environ.get("WORDRECALL_REPORT_PATH", ROOT / "data_build_report.json"))
 SCHEMA_VERSION = 1
-EXPECTED = ["cefrj.csv", "octanove_c1c2.csv", "diqt_a1.csv", "diqt_a2.csv", "diqt_b1.csv", "diqt_b2.csv", "diqt_phrase.csv", "diqt_phave.csv", "kaikki.jsonl"]
+EXPECTED = ["cefrj.csv", "octanove_c1c2.csv", "diqt_a1.csv", "diqt_a2.csv", "diqt_b1.csv", "diqt_b2.csv", "diqt_phrase.csv", "diqt_phave.csv", "ejdict.tsv", "wnjpn.db.gz", "freedict-eng-jpn.tar.xz", "JMdict_e.gz", "kaikki-japanese.jsonl.gz", "kaikki.jsonl"]
 CEFR = {"A1", "A2", "B1", "B2", "C1", "C2"}
 ALIASES = {
  "lemma": ["lemma", "word", "headword", "entry", "phrase", "expression", "title", "見出し語(英語)", "見出し語", "英語"], "cefr": ["cefr", "cefr_level", "level", "cefrレベル", "レベル"],
@@ -55,17 +56,39 @@ def source_for(name: str) -> str:
     return "DiQt"
 def as_list(value: Any) -> list[Any]: return value if isinstance(value, list) else []
 
+def matching_keys(value: str) -> set[str]:
+    """Exact spelling aliases only; never infer or translate a headword."""
+    key = norm(value)
+    return {key, *(norm(part) for part in key.split("/") if part.strip())}
+
 def main() -> int:
     config_path = RAW / "source_config.json"
     config = json.loads(config_path.read_text()) if config_path.exists() else {}
     csv_files = [p for p in RAW.glob("*.csv") if p.is_file()]
-    kaikki = next(iter(list(RAW.glob("kaikki*.jsonl")) + list(RAW.glob("kaikki*.jsonl.gz"))), None)
-    if not csv_files or kaikki is None:
+    ejdict = RAW / "ejdict.tsv"
+    wnjpn = RAW / "wnjpn.db.gz"
+    freedict = RAW / "freedict-eng-jpn.tar.xz"
+    jmdict = RAW / "JMdict_e.gz"
+    kaikki_ja = RAW / "kaikki-japanese.jsonl.gz"
+    kaikki_candidates = [path for path in list(RAW.glob("kaikki*.jsonl")) + list(RAW.glob("kaikki*.jsonl.gz")) if "japanese" not in path.name.lower()]
+    kaikki = next(iter(kaikki_candidates), None)
+    if not csv_files or not all(path.is_file() for path in (ejdict, wnjpn, freedict, jmdict, kaikki_ja)) or kaikki is None:
         missing = [name for name in EXPECTED if not (RAW / name).exists() and not (name == "kaikki.jsonl" and kaikki)]
         print("Missing required raw dictionary files:", ", ".join(missing), file=sys.stderr); print("See README_DATA.md. No generated or fictional data will be substituted.", file=sys.stderr); return 2
     words: dict[str, dict[str, Any]] = {}; expressions: dict[str, dict[str, Any]] = {}
     meanings: list[dict[str, Any]] = []; definitions: list[dict[str, Any]] = []; pronunciations: list[dict[str, Any]] = []; forms: list[dict[str, Any]] = []; examples: list[dict[str, Any]] = []
     expression_meanings: list[dict[str, Any]] = []; expression_examples: list[dict[str, Any]] = []; counts = defaultdict(int); invalid: list[str] = []; conflicts: list[dict[str, Any]] = []
+    meaning_ids: set[str] = set(); ja_meaning_word_ids: set[str] = set(); ja_meaning_expression_ids: set[str] = set()
+    def add_ja_meaning(item: dict[str, Any], text: str, source: str, *, is_expression: bool = False) -> bool:
+        value = clean(text)
+        if not value: return False
+        target_key = "expressionId" if is_expression else "wordId"
+        row_id = uid("m", item["id"], source, value)
+        if row_id in meaning_ids: return False
+        meaning_ids.add(row_id); item["sources"].add(source)
+        (expression_meanings if is_expression else meanings).append({"id": row_id, target_key: item["id"], "language": "ja", "text": value, "source": source})
+        (ja_meaning_expression_ids if is_expression else ja_meaning_word_ids).add(item["id"])
+        return True
     def ensure_word(lemma: str, source: str, pos: str = "", cefr: str = "") -> dict[str, Any]:
         key = norm(lemma); item = words.get(key)
         if not item:
@@ -97,7 +120,7 @@ def main() -> int:
             meaning, definition, ipa = pick(row, "meaning", mapping), pick(row, "definition", mapping), pick(row, "ipa", mapping)
             example, example_ja, target_surface = pick(row, "example", mapping), pick(row, "example_ja", mapping), pick(row, "target_surface", mapping)
             if meaning:
-                dest = expression_meanings if is_expression else meanings; dest.append({"id": uid("m", target_id, source, meaning), target_key: target_id, "language": "ja", "text": meaning, "source": source})
+                add_ja_meaning(item, meaning, source, is_expression=is_expression)
             if definition and not is_expression: definitions.append({"id": uid("d", target_id, source, definition), "wordId": target_id, "text": definition, "source": source})
             if ipa and not is_expression: pronunciations.append({"id": uid("p", target_id, source, ipa), "wordId": target_id, "ipa": ipa, "source": source})
             if example:
@@ -105,6 +128,89 @@ def main() -> int:
                 dest = expression_examples if is_expression else examples; dest.append({"id": uid("e", target_id, source, example), target_key: target_id, "sentence": example, "translationJa": example_ja or None, "targetSurface": surface, "source": source})
             file_count += 1
         counts[source] += file_count
+    ejdict_matches: set[str] = set()
+    with ejdict.open(encoding="utf-8-sig") as handle:
+        for line_number, raw_line in enumerate(handle, 1):
+            line = raw_line.rstrip("\r\n")
+            if not line: continue
+            if "\t" not in line:
+                invalid.append(f"{ejdict.name}:{line_number}: invalid TSV row"); continue
+            headwords, raw_meaning = line.split("\t", 1)
+            meaning = clean(raw_meaning)
+            if not meaning:
+                invalid.append(f"{ejdict.name}:{line_number}: empty meaning"); continue
+            for lemma in (clean(value) for value in headwords.split(",")):
+                key = norm(lemma)
+                item = words.get(key) or expressions.get(key)
+                if not item: continue
+                add_ja_meaning(item, meaning, "EJDict", is_expression=key in expressions)
+                ejdict_matches.add(item["id"])
+    counts["EJDict"] = len(ejdict_matches)
+
+    word_aliases: dict[str, set[str]] = defaultdict(set)
+    for key, item in words.items():
+        for alias in matching_keys(key): word_aliases[alias].add(item["id"])
+    words_by_id = {item["id"]: item for item in words.values()}
+    def add_for_english(english: str, japanese_values: Iterable[str], source: str) -> int:
+        added = 0
+        for word_id in word_aliases.get(norm(english), set()):
+            if word_id in ja_meaning_word_ids: continue
+            for japanese in japanese_values:
+                if add_ja_meaning(words_by_id[word_id], japanese, source):
+                    added += 1
+                    break
+        return added
+
+    # Japanese WordNet is decompressed only into a temporary file for SQLite.
+    with tempfile.NamedTemporaryFile(prefix="word-recall-wnjpn-", suffix=".db") as db_file:
+        with gzip.open(wnjpn, "rb") as source: shutil.copyfileobj(source, db_file)
+        db_file.flush(); connection = sqlite3.connect(db_file.name)
+        try:
+            query = """SELECT e.lemma, j.lemma FROM word e
+                JOIN sense se ON se.wordid=e.wordid AND se.lang='eng'
+                JOIN sense sj ON sj.synset=se.synset AND sj.lang='jpn'
+                JOIN word j ON j.wordid=sj.wordid AND j.lang='jpn'
+                WHERE e.lang='eng'"""
+            for english, japanese in connection.execute(query): counts["Japanese WordNet"] += add_for_english(english, [japanese], "Japanese WordNet")
+        finally: connection.close()
+
+    # FreeDict TEI is parsed directly from the compressed tar member.
+    tei_ns = "{http://www.tei-c.org/ns/1.0}"
+    with tarfile.open(freedict, "r:xz") as archive:
+        member = next((item for item in archive.getmembers() if item.name.endswith("/eng-jpn.tei")), None)
+        if member is None: raise RuntimeError("FreeDict archive does not contain eng-jpn.tei")
+        stream = archive.extractfile(member)
+        if stream is None: raise RuntimeError("FreeDict eng-jpn.tei could not be opened")
+        for _, entry in ET.iterparse(stream, events=("end",)):
+            if entry.tag != tei_ns + "entry": continue
+            japanese = [node.text or "" for node in entry.findall(f".//{tei_ns}cit[@type='trans']/{tei_ns}quote")]
+            for node in entry.findall(f"./{tei_ns}form/{tei_ns}orth"):
+                if node.text: counts["FreeDict"] += add_for_english(node.text, japanese, "FreeDict")
+            entry.clear()
+
+    # JMdict is Japanese -> English. Only an exact English gloss is reversed.
+    with gzip.open(jmdict, "rb") as stream:
+        for _, entry in ET.iterparse(stream, events=("end",)):
+            if entry.tag != "entry": continue
+            japanese = [node.text or "" for node in entry.findall("./k_ele/keb") + entry.findall("./r_ele/reb")]
+            for gloss in entry.findall("./sense/gloss"):
+                if gloss.text:
+                    english = re.sub(r"^to\s+", "", gloss.text, flags=re.IGNORECASE)
+                    counts["JMdict"] += add_for_english(english, japanese, "JMdict")
+            entry.clear()
+
+    # Japanese Wiktionary entries are also reversed only on exact English glosses.
+    with open_text(kaikki_ja) as handle:
+        for line_number, line in enumerate(handle, 1):
+            try: entry = json.loads(line)
+            except json.JSONDecodeError: invalid.append(f"{kaikki_ja.name}:{line_number}: invalid JSON"); continue
+            japanese = clean(entry.get("word"))
+            if not japanese: continue
+            for sense in as_list(entry.get("senses")):
+                if not isinstance(sense, dict): continue
+                for gloss in as_list(sense.get("glosses")):
+                    english = re.sub(r"^to\s+", "", clean(gloss), flags=re.IGNORECASE)
+                    counts["Japanese Wiktionary"] += add_for_english(english, [japanese], "Japanese Wiktionary")
     detailed_keys = set(words) | set(expressions)
     existence_tmp = Path(tempfile.mkdtemp(prefix="word-recall-existence-"))
     handles: dict[str, Any] = {}
@@ -134,6 +240,14 @@ def main() -> int:
                         if value and value != "-": forms.append({"id": uid("f", target_id, value, tags), "wordId": target_id, "form": value, "normalizedForm": norm(value), "formType": tags or "form", "source": "Wiktionary"})
                 for sense in as_list(entry.get("senses")):
                     if not isinstance(sense, dict): continue
+                    for translation in as_list(sense.get("translations")):
+                        if not isinstance(translation, dict): continue
+                        language = clean(translation.get("lang_code") or translation.get("code") or translation.get("lang"))
+                        value = clean(translation.get("word"))
+                        if language.lower() in {"ja", "jpn", "japanese"} and value:
+                            if word and word["id"] in ja_meaning_word_ids: continue
+                            if expression and expression["id"] in ja_meaning_expression_ids: continue
+                            counts["Wiktionary Japanese translations"] += add_ja_meaning(word or expression, value, "Wiktionary", is_expression=word is None)
                     for gloss in as_list(sense.get("glosses")):
                         value = clean(gloss)
                         if value and word: definitions.append({"id": uid("d", target_id, "Wiktionary", value), "wordId": target_id, "text": value, "source": "Wiktionary"})
@@ -142,6 +256,24 @@ def main() -> int:
                         if text:
                             surface = lemma if key in norm(text) else None; dest = examples if word else expression_examples; target_key = "wordId" if word else "expressionId"
                             dest.append({"id": uid("e", target_id, "Wiktionary", text), target_key: target_id, "sentence": text, "translationJa": None, "targetSurface": surface, "source": "Wiktionary"})
+
+        # A detailed study entry must always contain a sourced Japanese meaning.
+        # Entries without one remain searchable in the lightweight existence index
+        # and use the existing user-provided-data flow instead of showing a blank card.
+        words_with_ja = {row["wordId"] for row in meanings if row.get("language") == "ja"}
+        incomplete_words = [item for item in words.values() if item["id"] not in words_with_ja]
+        incomplete_ids = {item["id"] for item in incomplete_words}
+        for item in incomplete_words:
+            key = item["normalizedLemma"]; bucket = hashlib.sha256(key.encode()).hexdigest()[:1]
+            if bucket not in handles: handles[bucket] = (existence_tmp / f"{bucket}.jsonl").open("a", encoding="utf-8")
+            handles[bucket].write(json.dumps({"normalizedLemma": key, "lemma": item["lemma"], "pos": ", ".join(item["pos"])}, ensure_ascii=False) + "\n")
+            words.pop(key, None)
+        if incomplete_ids:
+            meanings[:] = [row for row in meanings if row["wordId"] not in incomplete_ids]
+            definitions[:] = [row for row in definitions if row["wordId"] not in incomplete_ids]
+            pronunciations[:] = [row for row in pronunciations if row["wordId"] not in incomplete_ids]
+            forms[:] = [row for row in forms if row["wordId"] not in incomplete_ids]
+            examples[:] = [row for row in examples if row["wordId"] not in incomplete_ids]
         for h in handles.values(): h.close()
         OUT.mkdir(parents=True, exist_ok=True)
         for child in OUT.iterdir():
@@ -200,7 +332,8 @@ def main() -> int:
         version_seed = "|".join(f"{s['path']}:{s['sha256']}" for s in shards); version = dt.datetime.now(dt.timezone.utc).strftime("%Y.%m.%d") + "-" + hashlib.sha256(version_seed.encode()).hexdigest()[:8]
         manifest = {"schemaVersion": SCHEMA_VERSION, "dictionaryVersion": version, "buildDate": dt.datetime.now(dt.timezone.utc).isoformat(), "wordCount": len(word_rows), "expressionCount": len(expression_rows), "existenceIndexCount": existence_count, "exampleCount": len(examples)+len(expression_examples), "totalBytes": total_bytes, "shards": shards}
         manifest_bytes = json.dumps(manifest, ensure_ascii=False, indent=2).encode(); (OUT/"manifest.json").write_bytes(manifest_bytes); total_bytes += len(manifest_bytes); manifest["totalBytes"] = total_bytes; (OUT/"manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
-        report = {"CEFR-J word count": counts["CEFR-J"], "Octanove count": counts["Octanove"], "DiQt count": counts["DiQt"], "PHRASE count": counts["PHRASE"], "PHaVE count": counts["PHaVE"], "Wiktionary detailed count": sum(1 for w in word_rows if "Wiktionary" in w["sources"]), "Wiktionary existence count": existence_count, "combined words": len(word_rows), "combined expressions": len(expression_rows), "examples": len(tables["examples"])+len(tables["expressionExamples"]), "meanings": len(tables["meanings"])+len(tables["expressionMeanings"]), "definitions": len(tables["definitions"]), "duplicates": duplicate_count, "conflicts": conflicts, "invalid rows": invalid, "final bytes": total_bytes, "shard count": len(shards)}
+        words_with_ja = {row["wordId"] for row in tables["meanings"] if row.get("language") == "ja"}
+        report = {"CEFR-J word count": counts["CEFR-J"], "Octanove count": counts["Octanove"], "DiQt count": counts["DiQt"], "EJDict matched count": counts["EJDict"], "Japanese WordNet meanings": counts["Japanese WordNet"], "FreeDict meanings": counts["FreeDict"], "JMdict meanings": counts["JMdict"], "Japanese Wiktionary meanings": counts["Japanese Wiktionary"], "English Wiktionary Japanese translations": counts["Wiktionary Japanese translations"], "PHRASE count": counts["PHRASE"], "PHaVE count": counts["PHaVE"], "Wiktionary detailed count": sum(1 for w in word_rows if "Wiktionary" in w["sources"]), "Wiktionary existence count": existence_count, "combined words": len(word_rows), "combined expressions": len(expression_rows), "words with Japanese meaning": len(words_with_ja), "words without Japanese meaning": len(word_rows) - len(words_with_ja), "existence-only due to missing Japanese meaning": len(incomplete_words), "existence-only headwords": [item["lemma"] for item in incomplete_words], "examples": len(tables["examples"])+len(tables["expressionExamples"]), "meanings": len(tables["meanings"])+len(tables["expressionMeanings"]), "definitions": len(tables["definitions"]), "duplicates": duplicate_count, "conflicts": conflicts, "invalid rows": invalid, "final bytes": total_bytes, "shard count": len(shards)}
         REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2))
         print(f"Dictionary {version}: {len(word_rows):,} words, {len(expression_rows):,} expressions, {existence_count:,} existence entries")
         print(f"Final size: {total_bytes/1024/1024:.2f} MB in {len(shards)} shards")

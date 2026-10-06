@@ -10,7 +10,7 @@ npx playwright install chromium
 npm run dictionary:download
 ```
 
-スクリプトはCEFR-JとOctanoveを自動取得し、DiQtの公式ログイン画面をローカルChromiumで開きます。メールアドレスとパスワードはブラウザへご自身で入力してください。スクリプトは認証情報を要求せず、読み取り・保存もしません。ログイン後にターミナルでEnterを押すと、公式ダウンロード画面からA1/A2/B1/B2/PHRASE/PHaVEを取得して所定名で保存します。
+スクリプトはCEFR-J、Octanove、EJDict、Japanese WordNet、FreeDict、JMdict、Japanese Wiktionary / Kaikkiを自動取得し、DiQtの公式ログイン画面をローカルChromiumで開きます。メールアドレスとパスワードはブラウザへご自身で入力してください。スクリプトは認証情報を要求せず、読み取り・保存もしません。ログイン後にターミナルでEnterを押すと、公式ダウンロード画面からA1/A2/B1/B2/PHRASE/PHaVEを取得して所定名で保存します。
 
 Kaikki English JSONLは展開後約3.1GBですが、取得スクリプトはサーバーのgzipレスポンスを展開せず`kaikki.jsonl.gz`（約500MB）として保存します。Pythonもgzipを1行ずつ直接読み、3.1GB版を別途生成しません。取得前の確認を省略する場合は`npm run dictionary:download -- --yes-kaikki`、既にKaikkiを手元に置いた場合やCSVだけ取得する場合は`--skip-kaikki --download-only`を使えます。`--force`は既存ファイルを再取得します。取得完了後は通常、辞書buildとvalidationまで自動実行されます。
 
@@ -27,13 +27,22 @@ diqt_b1.csv
 diqt_b2.csv
 diqt_phrase.csv
 diqt_phave.csv
+ejdict.tsv
+wnjpn.db.gz
+freedict-eng-jpn.tar.xz
+JMdict_e.gz
+kaikki-japanese.jsonl.gz
 kaikki.jsonl          # kaikki*.jsonl.gz も可
 ```
 
 - CEFR-J Vocabulary Profile: [CEFR-J公式resources](https://corpuscobo.net/)。研究・商用利用は無償ですが、適切な引用が必要です。著作権は東京外国語大学投野研究室に帰属します。
 - Octanove Vocabulary Profile C1/C2: [Open Language Profiles](https://github.com/openlanguageprofiles/olp-en-cefrj)。CC BY-SA 4.0です。
 - DiQtのCEFR-J [A1](https://www.diqt.net/ja/word_tags/7/download)・[A2](https://www.diqt.net/ja/word_tags/8/download)・[B1](https://www.diqt.net/ja/word_tags/9/download)・[B2](https://www.diqt.net/ja/word_tags/10/download)、[PHRASE](https://www.diqt.net/ja/word_tags/5/download)、[PHaVE](https://www.diqt.net/ja/word_tags/6/download): 公式CSVはログイン後に取得できます。各ページ記載のCC BY-SA 4.0、CEFR-JおよびDiQtへのクレジット条件を守ってください。本プロジェクトは認証情報も取得済みraw dataも再配布しません。
-- English Wiktionary / Kaikki: [Kaikki raw downloads](https://kaikki.org/dictionary/rawdata.html)からEnglish JSONLを取得します。本文データはWiktionaryのCC BY-SA/GFDL条件と帰属要件に従ってください。Wiktextractコード自体はMITです。
+- EJDict: [kujirahand/EJDict](https://github.com/kujirahand/EJDict) v2.0.1。CC0 1.0です。
+- Japanese WordNet: [NICT Japanese WordNet](https://bond-lab.github.io/wnja/eng/downloads.html) v1.1。配布物のlicenseと帰属表示に従います。
+- FreeDict English–Japanese: [FreeDict downloads](https://freedict.org/downloads/) 2025.11.23。CC BY-SA 3.0です。
+- JMdict: [EDRDG JMdict](https://www.edrdg.org/wiki/JMdict-EDICT_Dictionary_Project)。EDRDGの使用・配布条件とcredit要件に従います。英語glossが見出し語と完全一致する場合だけ逆引きします。
+- English / Japanese Wiktionary・Kaikki: [Kaikki raw downloads](https://kaikki.org/dictionary/rawdata.html)から両言語のJSONLを取得します。本文データはWiktionaryのCC BY-SA/GFDL条件と帰属要件に従ってください。Wiktextractコード自体はMITです。
 
 配布filenameや列名が異なる場合は`data/raw/source_config.json`で対応できます。
 
@@ -57,6 +66,6 @@ python3 scripts/build_dictionary.py
 python3 scripts/validate_dictionary.py
 ```
 
-生成先は`public/dictionary/`、reportは`data_build_report.json`です。validatorは空lemma、不正CEFR、空source、duplicate ID/normalized lemma/expression、orphan、foreign key、空meaning、HTML、制御Unicode、異常長、target不存在、relation、manifest件数、各shard checksumを検査します。問題を自動修正しません。
+生成先は`public/dictionary/`、reportは`data_build_report.json`です。validatorは空lemma、不正CEFR、空source、duplicate ID/normalized lemma/expression、orphan、foreign key、空meaning、詳細見出し語の日本語訳欠落、HTML、制御Unicode、異常長、target不存在、relation、manifest件数、各shard checksumを検査します。問題を自動修正しません。複数の実在辞書を照合しても日本語訳が得られない見出し語は、空の詳細項目として公開せず、存在確認indexへ移してユーザー入力画面を使います。その一覧と件数はbuild reportへ記録されます。
 
-正常終了後は巨大な`data/raw/kaikki*.jsonl`または`.gz`を削除してもPWAは動作します。raw Kaikkiは`.gitignore`対象です。生成した辞書を公開する前に、全ソースの帰属・ShareAlike・再配布条件を改めて確認してください。
+正常終了後は`data/raw/`のraw辞書を削除してもPWAは動作します。raw辞書は`.gitignore`対象です。Japanese WordNetはbuild中だけ一時展開され、終了時に削除されます。生成した辞書を公開する前に、全ソースの帰属・ShareAlike・再配布条件を改めて確認してください。

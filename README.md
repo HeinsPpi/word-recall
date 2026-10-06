@@ -30,7 +30,7 @@ npm run dev
 
 端末間同期を有効にするローカルbuildでは、`.env.example`を参考に`VITE_SUPABASE_URL`とブラウザ公開用の`VITE_SUPABASE_PUBLISHABLE_KEY`を設定します。`service_role`や`sb_secret_`キーをブラウザへ入れてはいけません。DB変更は`supabase/migrations`で管理します。
 
-`dictionary:download`は公開CEFR-J/Octanoveを直接取得し、DiQtのログイン画面をChromiumで開きます。DiQtのメールアドレスとパスワードはブラウザへ本人が直接入力し、スクリプトは認証情報を読み取り・保存しません。ログイン後は公式CSV 6点を取得し、Kaikkiの大容量取得を確認してから、buildとvalidationまで実行します。
+`dictionary:download`は公開CEFR-J/Octanove、EJDict、Japanese WordNet、FreeDict、JMdict、日本語版Kaikkiを直接取得し、DiQtのログイン画面をChromiumで開きます。DiQtのメールアドレスとパスワードはブラウザへ本人が直接入力し、スクリプトは認証情報を読み取り・保存しません。ログイン後は公式CSV 6点を取得し、英語版Kaikkiの大容量取得を確認してから、buildとvalidationまで実行します。
 
 辞書raw dataが未配置でもアプリ本体はbuildできますが、build時に明示的なwarningが出て、初回画面は実辞書の生成を案内します。架空データにはfallbackしません。
 
@@ -49,7 +49,7 @@ E2EはChromiumとWebKitで初回setup、検索、登録、熟語選択、初回�
 
 ## 辞書構成
 
-`scripts/build_dictionary.py` はCSVを行単位、Kaikki JSONL/JSONL.GZをストリーミング処理します。詳細対象はCEFR-J、Octanove、DiQt、PHRASE、PHaVEのunionです。それ以外のEnglish Wiktionary項目は軽量存在indexだけを生成します。全テーブルはnormalized keyのSHA-256先頭2桁で固定分割され、manifestには件数・bytes・SHA-256が入ります。
+`scripts/build_dictionary.py` はCSVを行単位、Kaikki JSONL/JSONL.GZをストリーミング処理します。詳細対象はCEFR-J、Octanove、DiQt、PHRASE、PHaVEのunionで、日本語訳はDiQt/EJDictを優先し、欠落時だけJapanese WordNet、FreeDict、JMdict、Wiktionaryの実データで補完します。実在ソースに日本語訳がない項目は空の詳細カードにせず、軽量存在indexとユーザー入力経路へ移します。validatorは全詳細見出し語に日本語訳があることを強制します。それ以外のEnglish Wiktionary項目も軽量存在indexだけを生成します。全テーブルはnormalized keyのSHA-256先頭1桁で固定分割され、manifestには件数・bytes・SHA-256が入ります。
 
 生成後の `data_build_report.json` にはソース別件数、重複、競合、無効行、最終容量、shard数が記録されます。150MBを超えるとテーブル別容量とwarningを表示します。
 

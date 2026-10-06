@@ -64,6 +64,9 @@ def main() -> int:
         normalized_expressions.add(key)
         if row.get("cefrLevel") not in CEFR: errors.append(f"expression {row.get('id')}: invalid CEFR")
     word_ids, expression_ids = ids.get("words", set()), ids.get("expressions", set())
+    japanese_meaning_word_ids = {row.get("wordId") for row in rows_cache.get("meanings", []) if row.get("language") == "ja" and row.get("text", "").strip()}
+    for word_id in word_ids - japanese_meaning_word_ids:
+        errors.append(f"word {word_id}: Japanese meaning is required for every detailed entry")
     foreign = {"meanings": ("wordId", word_ids), "definitions": ("wordId", word_ids), "pronunciations": ("wordId", word_ids), "wordForms": ("wordId", word_ids), "examples": ("wordId", word_ids), "expressionWords": ("expressionId", expression_ids), "expressionMeanings": ("expressionId", expression_ids), "expressionExamples": ("expressionId", expression_ids)}
     for table, (field, targets) in foreign.items():
         for row in rows_cache.get(table, []):
