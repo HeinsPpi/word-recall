@@ -35,6 +35,7 @@ export function SettingsPage() {
   }
   async function restore(file: File): Promise<void> {
     try {
+      if (file.size > 10 * 1024 * 1024) throw new Error('backup_too_large')
       const parsed: unknown = JSON.parse(await file.text())
       await restoreBackup(parsed)
       requestSync(0)

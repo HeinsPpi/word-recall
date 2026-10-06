@@ -1,0 +1,65 @@
+# WordRecall security operations
+
+WordRecallは端末内IndexedDBを正本とし、Supabaseはパスワードレス認証と学習データ同期だけに使います。辞書、入力した回答文字列、応答時間、端末ID、Analyticsはクラウドへ送りません。
+
+## 初回アカウント作成後に必ず行うこと
+
+監査時点ではSupabase Authユーザーが0人だったため、初回アカウントを作れるようsignupを一時的に有効にしています。
+
+1. 公開PWAの「設定」→「アカウントと同期」で自分のメールアドレスを入力する。
+2. 届いたMagic Linkを開き、Supabase Dashboardの **Authentication → Users** に自分の1ユーザーだけがあることを確認する。
+3. **Authentication → Sign In / Providers → Email**（UIによっては **Authentication → General Configuration**）で **Allow new users to sign up** をOFFにする。
+4. 以後、新規メールアドレスでは登録できず、作成済みアカウントだけがMagic Linkでログインできることを確認する。
+
+アプリには明示的なsignupボタン、パスワード入力、password resetはありません。Freeプランの標準メール送信ではOTPコード本文への変更が許可されないため、独自SMTPを増やさず標準Magic Linkを使用します。有効期限は10分です。
+
+## Dashboardで確認する項目
+
+- **Authentication → General Configuration → Allow anonymous sign-ins**: OFF。監査時にOFFを確認済み。
+- **Authentication → URL Configuration → Site URL**: `https://heinsppi.github.io/word-recall/`。
+- **Authentication → URL Configuration → Redirect URLs**: `https://heinsppi.github.io/word-recall/**`だけ。localhostと任意ドメインwildcardは残さない。
+- **Authentication → Rate Limits**: Email送信制限を無効化しない。監査時は2通/時。
+- **Database → Security Advisor**: migration適用後にERROR/WARNが0件であることを確認する。
+- **Database → Publications**: `supabase_realtime`へ`sync_records`を追加しない。
+- **Storage**: bucketを作らない。
+- **Project Settings → API Keys**: frontendでは`sb_publishable_...`だけを使用する。secret/service-role keyをGitHub Variablesや`VITE_*`へ入れない。
+- **Organization / Account Settings**: Supabaseと連携GitHubアカウントのMFAを有効化し、不要なmemberとpersonal access tokenを削除する。
+
+## 再現可能なDB防御
+
+`supabase/migrations`は次を構成します。
+
+- `sync_records`のRLSをENABLEかつFORCE。
+- `anon`/`public`は権限なし。`authenticated`はSELECT/INSERT/UPDATE/DELETEだけ。
+- CRUDごとに`(select auth.uid()) = user_id`を検証し、INSERT/UPDATEには`WITH CHECK`を設定。
+- record/payloadの型・長さ・256KiB上限、ユーザーあたり10万record上限、重複単語・熟語制約。
+- `updated_at`とtombstone時刻はDB側で設定。
+- trigger functionは`SECURITY INVOKER`、空の`search_path`、直接EXECUTE不可。
+
+RLSテストは`supabase/tests/database/sync_records_rls.test.sql`にあります。Dockerが使える環境では次を実行します。
+
+```sh
+npx supabase start
+npx supabase test db
+```
+
+本番監査では同じSQLをtransaction内で実行してrollbackし、18/18成功を確認しました。
+
+## Keyと環境変数
+
+許可するfrontend環境変数は次の2つだけです。
+
+```text
+VITE_SUPABASE_URL
+VITE_SUPABASE_PUBLISHABLE_KEY
+```
+
+`.env*`は`.gitignore`対象で、値なしの`.env.example`だけをcommitします。publishable keyは公開情報であり、RLSが認可境界です。DB password、service role、`sb_secret_...`、Management API tokenはfrontendに置きません。
+
+監査ではtracked file、Git履歴、`dist`にsecret-shaped valueがないことを確認しました。過去に使用したlegacy API keysはSupabase側で無効化済みです。漏洩した有効secretは検出されていないため、現時点で追加rotationは不要です。
+
+## セッション・端末データ
+
+Supabase SDKの標準session refreshを使用し、tokenをログ・backup・Cache Storageへ入れません。Service WorkerにはSupabase endpointのruntime cacheがありません。logoutはオンライン同期後に学習用IndexedDBを消去してからsessionを破棄するため、同じブラウザで次の利用者へ前利用者のデータを見せません。辞書DBは消去しません。
+
+GitHub Pagesは任意のHTTP security headerを設定できないため、CSPは`index.html`のmetaで設定しています。`frame-ancestors`、`X-Content-Type-Options`などheader限定の防御が必要になった場合は、静的配信先をCloudflare Pages等へ変更してください。

@@ -57,4 +57,4 @@ E2EはChromiumとWebKitで初回setup、検索、登録、熟語選択、初回�
 
 `main`へのpushでGitHub Actionsがinstall、lint、typecheck、unit test、build、Pages deployを実行します。Repository Variablesの`VITE_SUPABASE_URL`と`VITE_SUPABASE_PUBLISHABLE_KEY`が同期設定としてbuildへ渡されます。Viteの`base`は`GITHUB_REPOSITORY`からリポジトリ名を自動取得するため、`https://USERNAME.github.io/word-recall/`のような配下でも動作します。画面routingはclient stateなのでSPA 404は発生しません。
 
-iPhoneへの導入は [README_IPHONE.md](README_IPHONE.md)、第三者データとライブラリは [LICENSES.md](LICENSES.md) と [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を確認してください。
+iPhoneへの導入は [README_IPHONE.md](README_IPHONE.md)、Supabaseの初回セキュリティ設定は [README_SECURITY.md](README_SECURITY.md)、第三者データとライブラリは [LICENSES.md](LICENSES.md) と [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を確認してください。

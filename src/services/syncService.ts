@@ -34,7 +34,13 @@ interface RemoteRecord {
   payload: unknown
   updated_at: string
   deleted_at: string | null
-  device_id: string
+}
+interface UploadRecord {
+  user_id: string
+  table_name: SyncTableName
+  record_id: string
+  payload: Record<string, unknown>
+  deleted_at: string | null
 }
 export interface SyncStatus {
   state: 'idle' | 'syncing' | 'success' | 'error'
@@ -73,10 +79,7 @@ function hash(value: unknown): string {
   return (result >>> 0).toString(16).padStart(8, '0')
 }
 
-function validPayload(
-  table: SyncTableName,
-  payload: unknown
-): payload is SyncPayload {
+function validPayload(table: SyncTableName, payload: unknown): boolean {
   if (!payload || typeof payload !== 'object') return false
   const item = payload as Record<string, unknown>
   if (typeof item.id !== 'string') return false
@@ -107,6 +110,24 @@ function validPayload(
   )
 }
 
+/** Only data required to restore learning state is sent to Supabase. */
+export function toRemotePayload(
+  table: SyncTableName,
+  payload: SyncPayload
+): Record<string, unknown> {
+  const remote = { ...payload } as Record<string, unknown>
+  if (table === 'reviewLogs') {
+    delete remote.userAnswer
+    delete remote.expectedAnswer
+    delete remote.responseTimeMs
+  }
+  if (table === 'appSettings') {
+    delete remote.dictionaryVersion
+    delete remote.lastBackupAt
+  }
+  return remote
+}
+
 async function localRows(table: SyncTableName): Promise<SyncPayload[]> {
   switch (table) {
     case 'userWords':
@@ -122,6 +143,31 @@ async function localRows(table: SyncTableName): Promise<SyncPayload[]> {
     case 'progressSnapshots':
       return userDb.progressSnapshots.toArray()
   }
+}
+
+async function hydrateRemotePayload(
+  table: SyncTableName,
+  payload: unknown
+): Promise<SyncPayload> {
+  if (!validPayload(table, payload)) throw new Error('同期データが不正です')
+  const item = payload as Record<string, unknown>
+  if (table === 'reviewLogs') {
+    return {
+      ...item,
+      userAnswer: '',
+      expectedAnswer: '',
+      responseTimeMs: 0
+    } as unknown as ReviewLog
+  }
+  if (table === 'appSettings') {
+    const current = await userDb.appSettings.get('settings')
+    return {
+      ...item,
+      dictionaryVersion: current?.dictionaryVersion ?? null,
+      lastBackupAt: current?.lastBackupAt ?? null
+    } as unknown as AppSettings
+  }
+  return payload as SyncPayload
 }
 
 async function putLocal(
@@ -179,7 +225,7 @@ async function fetchRemote(userId: string): Promise<RemoteRecord[]> {
   for (let from = 0; ; from += 1000) {
     const { data, error } = await supabase
       .from('sync_records')
-      .select('*')
+      .select('user_id,table_name,record_id,payload,updated_at,deleted_at')
       .eq('user_id', userId)
       .order('updated_at')
       .range(from, from + 999)
@@ -191,7 +237,7 @@ async function fetchRemote(userId: string): Promise<RemoteRecord[]> {
   return rows
 }
 
-async function getDeviceId(userId: string): Promise<string> {
+async function ensureSyncOwner(userId: string): Promise<void> {
   const current = await userDb.syncState.get('sync')
   if (current?.userId && current.userId !== userId)
     throw new Error(
@@ -199,11 +245,9 @@ async function getDeviceId(userId: string): Promise<string> {
     )
   if (current) {
     if (!current.userId) await userDb.syncState.put({ ...current, userId })
-    return current.deviceId
+    return
   }
-  const deviceId = crypto.randomUUID()
-  await userDb.syncState.put({ id: 'sync', deviceId, lastSyncedAt: null, userId })
-  return deviceId
+  await userDb.syncState.put({ id: 'sync', lastSyncedAt: null, userId })
 }
 
 async function syncNow(session: Session): Promise<void> {
@@ -213,7 +257,7 @@ async function syncNow(session: Session): Promise<void> {
     lastSyncedAt: (await userDb.syncState.get('sync'))?.lastSyncedAt ?? null
   })
   const userId = session.user.id
-  const deviceId = await getDeviceId(userId)
+  await ensureSyncOwner(userId)
   const [remoteRows, metaRows, ...locals] = await Promise.all([
     fetchRemote(userId),
     userDb.syncMeta.where('userId').equals(userId).toArray(),
@@ -228,7 +272,7 @@ async function syncNow(session: Session): Promise<void> {
       row
     ])
   )
-  const uploads: RemoteRecord[] = []
+  const uploads: UploadRecord[] = []
   const nextMeta: SyncMeta[] = []
   const now = new Date().toISOString()
 
@@ -241,13 +285,26 @@ async function syncNow(session: Session): Promise<void> {
       const localRow = local.get(row.record_id)
       const oldMeta = meta.get(key)
       if (row.deleted_at) {
-        if (!localRow || (oldMeta && hash(localRow) === oldMeta.localHash))
-          await deleteLocal(table, row.record_id)
+        await deleteLocal(table, row.record_id)
         local.delete(row.record_id)
+        nextMeta.push({
+          id: `${userId}:${key}`,
+          userId,
+          tableName: table,
+          recordId: row.record_id,
+          localHash: '__deleted__',
+          remoteUpdatedAt: row.updated_at
+        })
         continue
       }
       if (!localRow && oldMeta) {
-        uploads.push({ ...row, updated_at: now, deleted_at: now, device_id: deviceId })
+        uploads.push({
+          user_id: row.user_id,
+          table_name: row.table_name,
+          record_id: row.record_id,
+          payload: row.payload as Record<string, unknown>,
+          deleted_at: now
+        })
         nextMeta.push({
           id: `${userId}:${key}`,
           userId,
@@ -258,18 +315,22 @@ async function syncNow(session: Session): Promise<void> {
         })
         continue
       }
-      if (!validPayload(table, row.payload) || row.payload.id !== row.record_id)
+      if (
+        !validPayload(table, row.payload) ||
+        (row.payload as Record<string, unknown>).id !== row.record_id
+      )
         continue
       if (
         !localRow ||
         (!oldMeta && table === 'appSettings') ||
         (oldMeta &&
-          hash(localRow) === oldMeta.localHash &&
+          hash(toRemotePayload(table, localRow)) === oldMeta.localHash &&
           row.updated_at > oldMeta.remoteUpdatedAt)
       ) {
         try {
-          await putLocal(table, row.payload)
-          local.set(row.record_id, row.payload)
+          const hydrated = await hydrateRemotePayload(table, row.payload)
+          await putLocal(table, hydrated)
+          local.set(row.record_id, hydrated)
         } catch (error) {
           if (!(
             error instanceof DOMException && error.name === 'ConstraintError'
@@ -282,7 +343,8 @@ async function syncNow(session: Session): Promise<void> {
       const key = `${table}:${row.id}`
       const remoteRow = remote.get(key)
       const oldMeta = meta.get(key)
-      const localHash = hash(row)
+      const remotePayload = toRemotePayload(table, row)
+      const localHash = hash(remotePayload)
       const remoteChanged = Boolean(
         remoteRow && oldMeta && remoteRow.updated_at > oldMeta.remoteUpdatedAt
       )
@@ -296,10 +358,8 @@ async function syncNow(session: Session): Promise<void> {
           user_id: userId,
           table_name: table,
           record_id: row.id,
-          payload: row,
-          updated_at: now,
-          deleted_at: null,
-          device_id: deviceId
+          payload: remotePayload,
+          deleted_at: null
         })
         nextMeta.push({
           id: `${userId}:${key}`,
@@ -322,20 +382,28 @@ async function syncNow(session: Session): Promise<void> {
     }
   }
 
+  const uploadedAt = new Map<string, string>()
   for (let index = 0; index < uploads.length; index += 200) {
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from('sync_records')
       .upsert(uploads.slice(index, index + 200), {
         onConflict: 'user_id,table_name,record_id'
       })
+      .select('table_name,record_id,updated_at')
     if (error) throw error
+    for (const row of data ?? [])
+      uploadedAt.set(`${row.table_name}:${row.record_id}`, row.updated_at)
+  }
+  for (const item of nextMeta) {
+    const serverTime = uploadedAt.get(`${item.tableName}:${item.recordId}`)
+    if (serverTime) item.remoteUpdatedAt = serverTime
   }
   await userDb.transaction(
     'rw',
     [userDb.syncMeta, userDb.syncState],
     async () => {
       await userDb.syncMeta.bulkPut(nextMeta)
-      await userDb.syncState.put({ id: 'sync', deviceId, lastSyncedAt: now, userId })
+      await userDb.syncState.put({ id: 'sync', lastSyncedAt: now, userId })
     }
   )
   emit({ state: 'success', lastSyncedAt: now })
@@ -350,9 +418,11 @@ export async function synchronize(): Promise<void> {
     if (data.session) await syncNow(data.session)
   })()
     .catch((error: unknown) => {
-      const message =
-        error instanceof Error ? error.message : '同期に失敗しました'
-      emit({ state: 'error', lastSyncedAt: null, message })
+      emit({
+        state: 'error',
+        lastSyncedAt: null,
+        message: '同期に失敗しました。通信状態を確認して再実行してください。'
+      })
       throw error
     })
     .finally(() => {

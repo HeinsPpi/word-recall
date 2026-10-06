@@ -38,3 +38,36 @@ export async function ensureSettings(): Promise<AppSettings> {
   await userDb.appSettings.put(defaultSettings)
   return defaultSettings
 }
+
+/**
+ * Removes the signed-in profile from this browser without touching the local
+ * dictionary. Call only after a successful cloud sync.
+ */
+export async function clearLocalLearningData(): Promise<void> {
+  await userDb.transaction(
+    'rw',
+    [
+      userDb.userWords,
+      userDb.userExpressions,
+      userDb.studyCards,
+      userDb.reviewLogs,
+      userDb.appSettings,
+      userDb.progressSnapshots,
+      userDb.syncMeta,
+      userDb.syncState
+    ],
+    async () => {
+      await Promise.all([
+        userDb.userWords.clear(),
+        userDb.userExpressions.clear(),
+        userDb.studyCards.clear(),
+        userDb.reviewLogs.clear(),
+        userDb.appSettings.clear(),
+        userDb.progressSnapshots.clear(),
+        userDb.syncMeta.clear(),
+        userDb.syncState.clear()
+      ])
+      await userDb.appSettings.put(defaultSettings)
+    }
+  )
+}
