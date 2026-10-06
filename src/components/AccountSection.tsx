@@ -4,10 +4,6 @@ import { supabase, syncConfigured } from '../services/supabaseClient'
 import { synchronize, type SyncStatus } from '../services/syncService'
 import { clearLocalLearningData, userDb } from '../db/userDb'
 
-function redirectUrl(): string {
-  return new URL(import.meta.env.BASE_URL, window.location.origin).toString()
-}
-
 function authMessage(error: unknown): string {
   const text = error instanceof Error ? error.message : String(error)
   if (text.includes('Token has expired') || text.includes('invalid'))
@@ -21,6 +17,7 @@ export function AccountSection() {
   const [session, setSession] = useState<Session | null>(null)
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [enrollmentCode, setEnrollmentCode] = useState('')
   const [busy, setBusy] = useState(false)
   const [message, setMessage] = useState('')
   const [status, setStatus] = useState<SyncStatus>({
@@ -75,18 +72,24 @@ export function AccountSection() {
     setMessage('ログインしました。端末間の同期を開始します。')
     await synchronize()
   }
-  async function sendPasswordSetupLink(): Promise<void> {
+  async function createAccount(): Promise<void> {
     if (!supabase) return
-    if (!email.trim()) {
-      setMessage('メールアドレスを入力してください。')
+    if (!email.trim() || password.length < 12 || !enrollmentCode.trim()) {
+      setMessage('メールアドレス、12文字以上のパスワード、登録コードを入力してください。')
       return
     }
-    const { error } = await supabase.auth.signInWithOtp({
+    const { data, error } = await supabase.auth.signUp({
       email: email.trim(),
-      options: { shouldCreateUser: false, emailRedirectTo: redirectUrl() }
+      password,
+      options: { data: { enrollment_code: enrollmentCode.trim() } }
     })
     if (error) throw error
-    setMessage('パスワード設定リンクを送りました。Safariで開いて設定してください。')
+    if (!data.session) throw new Error('signup_session_missing')
+    await supabase.auth.updateUser({ data: { enrollment_code: null } })
+    setPassword('')
+    setEnrollmentCode('')
+    setMessage('アカウントを作成しました。端末間の同期を開始します。')
+    await synchronize()
   }
   async function updatePassword(): Promise<void> {
     if (!supabase || password.length < 12) {
@@ -220,6 +223,16 @@ export function AccountSection() {
           onChange={(event) => setPassword(event.target.value)}
         />
       </label>
+      <label>
+        初回登録コード（初回だけ）
+        <input
+          type="text"
+          autoComplete="one-time-code"
+          maxLength={64}
+          value={enrollmentCode}
+          onChange={(event) => setEnrollmentCode(event.target.value.trim())}
+        />
+      </label>
       <button
         className="primary full"
         disabled={busy || !navigator.onLine}
@@ -229,10 +242,10 @@ export function AccountSection() {
       </button>
       <button
         className="secondary full"
-        disabled={busy || !navigator.onLine || !email.trim()}
-        onClick={() => void run(sendPasswordSetupLink)}
+        disabled={busy || !navigator.onLine}
+        onClick={() => void run(createAccount)}
       >
-        初回パスワード設定リンクを送る
+        初回アカウントを作成
       </button>
       {message && (
         <p className="form-message" role="status">

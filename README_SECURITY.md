@@ -2,21 +2,21 @@
 
 WordRecallは端末内IndexedDBを正本とし、Supabaseはパスワードレス認証と学習データ同期だけに使います。辞書、入力した回答文字列、応答時間、端末ID、Analyticsはクラウドへ送りません。
 
-## iPhoneでの初回ログイン
+## iPhoneでの初回登録
 
-Safariとホーム画面PWAは認証storageが分かれるため、Magic LinkだけではPWAへsessionを渡せません。本アプリは初回だけSafariで同期用パスワードを設定し、その後は各端末のPWA内でメールアドレスとパスワードを入力します。
+Safariとホーム画面PWAは認証storageが分かれるため、メールリンク認証は使用しません。初回登録もログインもホーム画面PWA内だけで完了します。
 
-1. 元から使っているホーム画面PWAの「設定」→「アカウントと同期」でメールアドレスを入力する。
-2. 「初回パスワード設定リンクを送る」を押す。
-3. メール内のリンクをSafariで開く。辞書installより先に専用のパスワード設定画面が表示される。
-4. 12文字以上の同期用パスワードを設定し、Safariタブを閉じる。
-5. 元のホーム画面PWAへ戻り、同じメールアドレスと同期用パスワードでログインする。
+1. ホーム画面PWAの「設定」→「アカウントと同期」を開く。
+2. 自分のメールアドレス、12文字以上の同期用パスワード、管理者から受け取った一回限り登録コードを入力する。
+3. 「初回アカウントを作成」を押す。その場でログインと同期が始まる。
+4. PCなど2台目以降は、同じメールアドレスとパスワードで「ログインして同期」を押す。登録コードは不要。
 
-新規signupとAnonymous Authは本番で無効化済みです。初回リンクは既存の1ユーザーにだけ送られ、有効期限は10分です。Freeプランの標準メール送信ではOTPコード本文への変更が許可されず、iOS PWAへMagic Link sessionも共有されないため、この一回限りのbridge方式を使用します。
+Supabase標準メールproviderの2通/時制限には依存しません。signup endpoint自体は初回登録のため有効ですが、Before User Created Hookが、以前に本人確認されたメールのSHA-256と一回限り登録コードのSHA-256の両方を照合します。それ以外のsignupはDB側で拒否されます。登録成功時にコードは失効し、Auth metadataからも削除されます。
 
 ## Dashboardで確認する項目
 
-- **Authentication → Sign In / Providers → Email → Allow new users to sign up**: OFF。監査後にOFFへ変更済み。
+- **Authentication → Sign In / Providers → Email → Allow new users to sign up**: ON。個人用allowlist Auth Hookが必須。HookなしでONにしない。
+- **Authentication → Hooks → Before User Created**: `private.wordrecall_before_user_created`を有効化。
 - **Authentication → General Configuration → Allow anonymous sign-ins**: OFF。監査時にOFFを確認済み。
 - **Authentication → URL Configuration → Site URL**: `https://heinsppi.github.io/word-recall/`。
 - **Authentication → URL Configuration → Redirect URLs**: `https://heinsppi.github.io/word-recall/**`だけ。localhostと任意ドメインwildcardは残さない。

@@ -8,7 +8,7 @@ export const supabase = syncConfigured
       auth: {
         persistSession: true,
         autoRefreshToken: true,
-        detectSessionInUrl: true
+        detectSessionInUrl: false
       }
     })
   : null

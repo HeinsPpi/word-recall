@@ -64,7 +64,7 @@
 
 **攻撃・障害シナリオと影響** 弱いpasswordや公開signupがaccount/DB quota abuseの入口になる。
 
-**修正方法・結果** 新規signupを無効化し、既存の1ユーザーだけに限定。Magic Link有効期限を3600秒から600秒へ短縮し、redirectを本番URLだけにした。iOSではSafariとホーム画面PWAのsession storageが分離されるため、初回Magic Link先で12文字以上の同期用パスワードを設定し、その後PWA内で直接ログインする方式へ変更した。標準メールproviderではOTPテンプレート変更がFree tierで拒否されたため、未接続のOTP UIは採用していない。
+**修正方法・結果** iOSではSafariとホーム画面PWAのsession storageが分離されるため、メールリンクを通常フローから削除した。以前に本人確認済みのメールhashと128-bit相当の一回限り登録コードをBefore User Created Hookで照合し、ホーム画面PWA内で12文字以上のpassword signupを完了する。コードは登録後に失効・metadataから削除され、他メールのsignupはDB側で拒否される。
 
 **確信度** High
 
@@ -116,13 +116,13 @@
 - DB: RLS `ENABLE` + `FORCE`。SELECT/INSERT/UPDATE/DELETEの4 policyを確認。INSERT/UPDATEは`WITH CHECK`あり。
 - Grants: `anon`は全操作不可。`authenticated`はSELECT/INSERT/UPDATE/DELETEだけ。TRUNCATE/REFERENCES/TRIGGERなし。
 - Cross-user/anonymous test: pgTAP 18/18成功。本番transaction内で実行しrollback済み。
-- Public objects: table 1、SECURITY INVOKER trigger function 1、view/RPC 0、Storage bucket 0、Realtime publication table 0。
+- Public objects: table 1、SECURITY INVOKER trigger function 1、view/RPC 0、Storage bucket 0、Realtime publication table 0。登録制限用objectはData API非公開の`private` schemaに隔離。
 - Security Advisor: 修正後ERROR/WARN 0件。
 - Secret: tracked file、全既存Git履歴、production bundleに有効secretなし。frontend keyはpublishable keyのみ。
 - Dependency: `npm audit` Critical/High/Medium/Lowすべて0。package specifierを実install versionへ固定。
 - XSS: unsafe DOM API、eval、dynamic runtime scriptなし。React text renderingを使用。
 - Service Worker: Supabase API/Auth responseのruntime cacheなし。
-- Quality gates: `npm ci`、lint、typecheck、production build成功。Vitest 37/37、Playwright 3 passed / 1 intentional skip（WebKit UI full-flow成功、WebKit offline emulationのみ非対応）、辞書91.2MB。
+- Quality gates: `npm ci`、lint、typecheck、production build成功。Vitest 35/35、Playwright 3 passed / 1 intentional skip（WebKit UI full-flow成功、WebKit offline emulationのみ非対応）、辞書91.2MB。
 
 ## チェック結果
 
@@ -131,7 +131,7 @@
 | Injection | ✅ | SQL文字列生成/RPCなし。Data API利用、DB制約追加 |
 | XSS | ✅ | unsafe DOM APIなし、React text rendering、CSPあり |
 | CSRF | ✅ | Cookie認証APIではなくBearer JWT/Data API。state-changing RESTはRLSで保護 |
-| 認証 | ✅ | signup/匿名無効、初回Magic Link 10分、12文字以上の同期用パスワード |
+| 認証 | ✅ | 匿名無効、email hash＋一回限りコードでsignup制限、12文字以上のpassword |
 | 認可 | ✅ | FORCE RLS、owner CRUD、cross-user 18/18 test |
 | 入力Validation | ✅ | DB payload/ID/文字数/件数制約、backup上限 |
 | Secret管理 | ✅ | frontendはpublishable keyのみ、履歴/bundle scan 0 |
@@ -147,6 +147,6 @@
 
 ## 手動作業と残存判定
 
-Auth userが1人作成されたことを確認後、新規signupを本番設定で無効化した。初回同期用パスワード設定の操作手順は`README_SECURITY.md`に記載した。
+初回登録コードはrepositoryやfrontend bundleへ保存しない。private DBにはhashだけを保持し、登録完了後に自動失効する。操作手順は`README_SECURITY.md`に記載した。
 
 総合評価は **B**。Critical 0 / High 0 / Medium 4（修正済み）/ Low 1（修正済み）/ Info 4。
