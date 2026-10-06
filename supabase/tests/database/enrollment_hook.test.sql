@@ -1,7 +1,7 @@
 begin;
 
 create extension if not exists pgtap with schema extensions;
-select plan(4);
+select plan(5);
 
 insert into private.wordrecall_account_enrollment (
   email_hash, enrollment_code_hash, consumed_at
@@ -46,6 +46,16 @@ select ok(
     'execute'
   ),
   'The enrollment hook is not callable by anon'
+);
+
+select ok(
+  has_schema_privilege('supabase_auth_admin', 'extensions', 'usage')
+  and has_function_privilege(
+    'supabase_auth_admin',
+    'extensions.digest(text,text)',
+    'execute'
+  ),
+  'The Auth hook role can execute the enrollment hash'
 );
 
 select * from finish();

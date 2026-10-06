@@ -115,7 +115,7 @@
 
 - DB: RLS `ENABLE` + `FORCE`。SELECT/INSERT/UPDATE/DELETEの4 policyを確認。INSERT/UPDATEは`WITH CHECK`あり。
 - Grants: `anon`は全操作不可。`authenticated`はSELECT/INSERT/UPDATE/DELETEだけ。TRUNCATE/REFERENCES/TRIGGERなし。
-- Cross-user/anonymous test: pgTAP 18/18成功。本番transaction内で実行しrollback済み。
+- Cross-user/anonymous test: pgTAP 18/18成功。登録Hook test 5/5成功。本番transaction内で実行しrollback済み。公開signup endpointで誤メール＋誤コードが403拒否されることも確認。
 - Public objects: table 1、SECURITY INVOKER trigger function 1、view/RPC 0、Storage bucket 0、Realtime publication table 0。登録制限用objectはData API非公開の`private` schemaに隔離。
 - Security Advisor: 修正後ERROR/WARN 0件。
 - Secret: tracked file、全既存Git履歴、production bundleに有効secretなし。frontend keyはpublishable keyのみ。
