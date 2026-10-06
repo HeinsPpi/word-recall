@@ -799,6 +799,16 @@ dd {
   color: var(--bg);
   padding: 8px 14px;
 }
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.error-panel button.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
 .spinner {
   width: 28px;
   height: 28px;
