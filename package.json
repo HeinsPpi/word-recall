@@ -23,6 +23,7 @@
     "dictionary:validate": "python3 scripts/validate_dictionary.py"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
     "@vite-pwa/assets-generator": "latest",
     "chart.js": "latest",
     "dexie": "latest",

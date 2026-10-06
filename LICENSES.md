@@ -22,4 +22,4 @@ WordRecallのアプリケーションコードはMIT Licenseです。全文は`L
 
 ## JavaScript dependencies
 
-`react`, `react-dom`, `vite`, `vite-plugin-pwa`, `dexie`, `dexie-react-hooks`, `ts-fsrs`, `chart.js`, `react-chartjs-2`, `lucide-react`, Vitest, Testing Library, Playwright, TypeScript, ESLintおよびPrettierは、それぞれのnpm packageに含まれるlicenseに従います。配布時の正確なversionは`package-lock.json`が唯一の基準です。主要packageはMIT、ISCまたはApache-2.0等のpermissive licenseですが、transitive dependencyを含む全文は`node_modules/<package>/LICENSE*`で確認できます。
+`react`, `react-dom`, `vite`, `vite-plugin-pwa`, `dexie`, `dexie-react-hooks`, `@supabase/supabase-js`, `ts-fsrs`, `chart.js`, `react-chartjs-2`, `lucide-react`, Vitest, Testing Library, Playwright, TypeScript, ESLintおよびPrettierは、それぞれのnpm packageに含まれるlicenseに従います。配布時の正確なversionは`package-lock.json`が唯一の基準です。主要packageはMIT、ISCまたはApache-2.0等のpermissive licenseですが、transitive dependencyを含む全文は`node_modules/<package>/LICENSE*`で確認できます。

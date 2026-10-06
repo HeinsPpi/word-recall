@@ -1,5 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie'
-import type { AppSettings, ProgressSnapshot, ReviewLog, StudyCard, UserExpression, UserWord } from '../types'
+import type { AppSettings, ProgressSnapshot, ReviewLog, StudyCard, SyncMeta, SyncState, UserExpression, UserWord } from '../types'
 
 export class UserDatabase extends Dexie {
   userWords!: EntityTable<UserWord, 'id'>
@@ -8,12 +8,20 @@ export class UserDatabase extends Dexie {
   reviewLogs!: EntityTable<ReviewLog, 'id'>
   appSettings!: EntityTable<AppSettings, 'id'>
   progressSnapshots!: EntityTable<ProgressSnapshot, 'id'>
+  syncMeta!: EntityTable<SyncMeta, 'id'>
+  syncState!: EntityTable<SyncState, 'id'>
   constructor(name = 'WordRecallUserDB') {
     super(name)
     this.version(1).stores({
       userWords: '&id, &normalizedLemma, addedAt, isActive', userExpressions: '&id, expressionId, parentUserWordId, enabled',
       studyCards: '&id, [targetType+targetId], targetType, targetId, lastReviewedAt, mastered, introductionSeen, fsrsCardData.due',
       reviewLogs: '&id, cardId, reviewedAt, [cardId+reviewedAt]', appSettings: '&id', progressSnapshots: '&id, date'
+    })
+    this.version(2).stores({
+      userWords: '&id, &normalizedLemma, addedAt, isActive', userExpressions: '&id, expressionId, parentUserWordId, enabled',
+      studyCards: '&id, [targetType+targetId], targetType, targetId, lastReviewedAt, mastered, introductionSeen, fsrsCardData.due',
+      reviewLogs: '&id, cardId, reviewedAt, [cardId+reviewedAt]', appSettings: '&id', progressSnapshots: '&id, date',
+      syncMeta: '&id, userId, [userId+tableName+recordId]', syncState: '&id'
     })
   }
 }

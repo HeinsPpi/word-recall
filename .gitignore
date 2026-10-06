@@ -8,6 +8,7 @@ test-results/
 __pycache__/
 *.pyc
 .env*
+!.env.example
 .DS_Store
 data/raw/kaikki*
 data/raw/*.csv

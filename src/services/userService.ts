@@ -3,6 +3,7 @@ import { userDb } from '../db/userDb'
 import type { DictionaryExpression, DictionaryWord, ProgressSnapshot, UserExpression, UserWord } from '../types'
 import { newFsrsCard } from './fsrsService'
 import { normalizeLookup } from '../utils/normalize'
+import { requestSync } from './syncService'
 
 function id(prefix: string): string { return `${prefix}_${crypto.randomUUID()}` }
 
@@ -24,6 +25,7 @@ export async function registerWord(word: DictionaryWord | null, custom: { lemma:
     }
   })
   await updateDailySnapshot()
+  requestSync()
   return userWord
 }
 
@@ -37,6 +39,7 @@ export async function registerStandaloneExpression(expression: DictionaryExpress
     await userDb.studyCards.add({ id: id('card'), targetType: 'expression', targetId: relation.id, fsrsCardData: newFsrsCard(), createdAt: now, lastReviewedAt: null, mastered: false, introductionSeen: false, promptCursor: 0 })
   })
   await updateDailySnapshot()
+  requestSync()
   return relation
 }
 

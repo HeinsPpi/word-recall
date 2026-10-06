@@ -54,6 +54,14 @@ export interface ProgressSnapshot {
   id: string; date: string; registeredWords: number; masteredWords: number; registeredExpressions: number
   masteredExpressions: number; totalReviews: number
 }
+export type SyncTableName = 'userWords' | 'userExpressions' | 'studyCards' | 'reviewLogs' | 'appSettings' | 'progressSnapshots'
+export interface SyncMeta {
+  id: string; userId: string; tableName: SyncTableName; recordId: string
+  localHash: string; remoteUpdatedAt: string
+}
+export interface SyncState {
+  id: 'sync'; deviceId: string; lastSyncedAt: string | null; userId?: string
+}
 export type PromptType = 'definition' | 'exampleCloze' | 'expressionCloze' | 'japaneseFallback'
 export interface StudyPrompt { type: PromptType; prompt: string; answer: string; meaning: string | null; definition: string | null }
 

@@ -23,4 +23,4 @@ Dictionary entry content is derived from English Wiktionary contributors through
 
 ## FSRS and application libraries
 
-Scheduling is provided by `ts-fsrs` (Free Spaced Repetition Scheduler). UI/runtime tooling includes React, Vite, Dexie, Chart.js, Workbox/vite-plugin-pwa and Lucide. Exact versions are locked in`package-lock.json`; their copyright and license files remain available in their respective packages.
+Scheduling is provided by `ts-fsrs` (Free Spaced Repetition Scheduler). UI/runtime tooling includes React, Vite, Dexie, Supabase JavaScript Client, Chart.js, Workbox/vite-plugin-pwa and Lucide. Exact versions are locked in`package-lock.json`; their copyright and license files remain available in their respective packages.
