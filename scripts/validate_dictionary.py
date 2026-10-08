@@ -65,8 +65,13 @@ def main() -> int:
         if row.get("cefrLevel") not in CEFR: errors.append(f"expression {row.get('id')}: invalid CEFR")
     word_ids, expression_ids = ids.get("words", set()), ids.get("expressions", set())
     japanese_meaning_word_ids = {row.get("wordId") for row in rows_cache.get("meanings", []) if row.get("language") == "ja" and row.get("text", "").strip()}
+    japanese_meaning_expression_ids = {row.get("expressionId") for row in rows_cache.get("expressionMeanings", []) if row.get("language") == "ja" and row.get("text", "").strip()}
     for word_id in word_ids - japanese_meaning_word_ids:
         errors.append(f"word {word_id}: Japanese meaning is required for every detailed entry")
+    for row in rows_cache.get("expressions", []):
+        if row.get("isUsagePattern"):
+            if "EJDict" not in row.get("sources", []): errors.append(f"expression {row.get('id')}: usage pattern lacks EJDict source")
+            if row.get("id") not in japanese_meaning_expression_ids: errors.append(f"expression {row.get('id')}: usage pattern lacks Japanese meaning")
     foreign = {"meanings": ("wordId", word_ids), "definitions": ("wordId", word_ids), "pronunciations": ("wordId", word_ids), "wordForms": ("wordId", word_ids), "examples": ("wordId", word_ids), "expressionWords": ("expressionId", expression_ids), "expressionMeanings": ("expressionId", expression_ids), "expressionExamples": ("expressionId", expression_ids)}
     for table, (field, targets) in foreign.items():
         for row in rows_cache.get(table, []):

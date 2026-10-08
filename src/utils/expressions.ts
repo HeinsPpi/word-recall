@@ -2,7 +2,8 @@ import type { DictionaryExpression } from '../types'
 
 export function isEligibleExpression(expression: DictionaryExpression): boolean {
   const levelEligible = expression.cefrLevel !== null && ['A1', 'A2', 'B1', 'B2'].includes(expression.cefrLevel)
-  return levelEligible || expression.inPhraseList || expression.inPhaveList
+  const sourcedUsagePattern = expression.isUsagePattern === true
+  return levelEligible || expression.inPhraseList || expression.inPhaveList || sourcedUsagePattern
 }
 
 export function expressionPriority(expression: DictionaryExpression): number[] {
@@ -12,6 +13,7 @@ export function expressionPriority(expression: DictionaryExpression): number[] {
     expression.inPhaveList ? 1 : 0,
     expression.inPhraseList ? 1 : 0,
     levelEligible ? 1 : 0,
+    expression.isUsagePattern === true ? 1 : 0,
     expression.sourceCount
   ]
 }

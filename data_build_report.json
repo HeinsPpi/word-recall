@@ -2,7 +2,8 @@
   "CEFR-J word count": 7799,
   "Octanove count": 2136,
   "DiQt count": 7799,
-  "EJDict matched count": 7798,
+  "EJDict matched count": 7799,
+  "EJDict usage pattern count": 8,
   "Japanese WordNet meanings": 179,
   "FreeDict meanings": 4,
   "JMdict meanings": 39,
@@ -10,11 +11,11 @@
   "English Wiktionary Japanese translations": 2,
   "PHRASE count": 501,
   "PHaVE count": 150,
-  "Wiktionary detailed count": 8168,
+  "Wiktionary detailed count": 8169,
   "Wiktionary existence count": 1355849,
-  "combined words": 8365,
-  "combined expressions": 738,
-  "words with Japanese meaning": 8365,
+  "combined words": 8366,
+  "combined expressions": 746,
+  "words with Japanese meaning": 8366,
   "words without Japanese meaning": 0,
   "existence-only due to missing Japanese meaning": 153,
   "existence-only headwords": [
@@ -172,9 +173,9 @@
     "unexcused",
     "unexceptionally"
   ],
-  "examples": 112139,
-  "meanings": 16544,
-  "definitions": 78363,
+  "examples": 112147,
+  "meanings": 16556,
+  "definitions": 78367,
   "duplicates": 53203,
   "conflicts": [
     {
@@ -11875,7 +11876,7 @@
     }
   ],
   "invalid rows": [],
-  "final bytes": 98015882,
+  "final bytes": 98043803,
   "shard count": 176,
   "validation": {
     "valid": true,

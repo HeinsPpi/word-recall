@@ -239,18 +239,6 @@ export function StudyPage() {
     )
   const currentItem = item
   const currentPrompt = prompt
-  const isIntro = !item.card.introductionSeen
-  async function begin() {
-    await userDb.studyCards.update(currentItem.card.id, {
-      introductionSeen: true
-    })
-    requestSync()
-    setItem({
-      ...currentItem,
-      card: { ...currentItem.card, introductionSeen: true }
-    })
-    setStartedAt(Date.now())
-  }
   async function submit() {
     if (!answer.trim() || answerState) return
     const exact =
@@ -306,6 +294,9 @@ export function StudyPage() {
       settings.masteryStabilityDays,
       reviewedAt
     )
+    // A new item is introduced by recalling it, not by exposing its answer.
+    // The first submitted attempt completes the introduction regardless of rating.
+    updated.introductionSeen = true
     updated.promptCursor += 1
     await userDb.transaction(
       'rw',
@@ -334,33 +325,6 @@ export function StudyPage() {
     setStartedAt(Date.now())
     setIndex((i) => i + 1)
   }
-  if (isIntro)
-    return (
-      <main className="page study-page">
-        <div className="step-count">
-          {index + 1} / {queue.length}
-        </div>
-        <section className="intro-card">
-          <p className="eyebrow">FIRST STUDY</p>
-          <div className="word-title">
-            <h1>{item.label}</h1>
-            <SpeakButton text={item.label} />
-          </div>
-          {item.ipa && <p className="ipa">/{item.ipa}/</p>}
-          <p>{[item.pos, item.cefr].filter(Boolean).join(' · ')}</p>
-          {item.meaning && (
-            <StudyInfo label="日本語意味" value={item.meaning} />
-          )}{' '}
-          {item.definition && (
-            <StudyInfo label="English definition" value={item.definition} />
-          )}{' '}
-          {item.example && <StudyInfo label="Example" value={item.example} />}
-          <button className="primary" onClick={() => void begin()}>
-            覚える
-          </button>
-        </section>
-      </main>
-    )
   return (
     <main className="page study-page">
       <div className="step-count">
@@ -440,7 +404,23 @@ export function StudyPage() {
               <SpeakButton text={answerState.expected} />
             </p>
             {prompt.meaning && <p>{prompt.meaning}</p>}
-            {prompt.definition && <p className="muted">{prompt.definition}</p>}
+            {!answerState.correct && (
+              <section className="recall-review" aria-label="定義を確認">
+                <h3>定義を確認</h3>
+                {prompt.definition && (
+                  <StudyInfo
+                    label="English definition"
+                    value={prompt.definition}
+                  />
+                )}
+                {item.example && (
+                  <StudyInfo label="Example" value={item.example} />
+                )}
+                {!prompt.definition && !item.example && prompt.meaning && (
+                  <p>{prompt.meaning}</p>
+                )}
+              </section>
+            )}
             <button className="primary" onClick={next}>
               Next
             </button>

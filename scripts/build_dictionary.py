@@ -27,6 +27,7 @@ ALIASES = {
  "target_surface": ["target_surface", "targetsurface", "surface"]
 }
 TAG_RE = re.compile(r"<[^>]+>")
+EJDICT_BE_TO_DO_RE = re.compile(r"《『(be [A-Za-z][A-Za-z' -]* to)』\s*do》", re.IGNORECASE)
 
 def norm(value: str) -> str:
     return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", value).strip().lower().replace("’", "'").replace("‘", "'").replace("–", "-").replace("—", "-"))
@@ -102,7 +103,7 @@ def main() -> int:
     def ensure_expression(text: str, source: str, cefr: str = "") -> dict[str, Any]:
         key = norm(text); item = expressions.get(key)
         if not item:
-            item = {"id": uid("x", key), "text": text.strip(), "normalizedText": key, "cefrLevel": None, "inPhraseList": False, "inPhaveList": False, "sources": set()}; expressions[key] = item
+            item = {"id": uid("x", key), "text": text.strip(), "normalizedText": key, "cefrLevel": None, "inPhraseList": False, "inPhaveList": False, "isUsagePattern": False, "sources": set()}; expressions[key] = item
         item["sources"].add(source); item["inPhraseList"] |= source == "PHRASE"; item["inPhaveList"] |= source == "PHaVE"
         if cefr in CEFR and not item["cefrLevel"]: item["cefrLevel"] = cefr
         return item
@@ -128,7 +129,7 @@ def main() -> int:
                 dest = expression_examples if is_expression else examples; dest.append({"id": uid("e", target_id, source, example), target_key: target_id, "sentence": example, "translationJa": example_ja or None, "targetSurface": surface, "source": source})
             file_count += 1
         counts[source] += file_count
-    ejdict_matches: set[str] = set()
+    ejdict_matches: set[str] = set(); ejdict_usage_patterns: set[str] = set()
     with ejdict.open(encoding="utf-8-sig") as handle:
         for line_number, raw_line in enumerate(handle, 1):
             line = raw_line.rstrip("\r\n")
@@ -139,13 +140,35 @@ def main() -> int:
             meaning = clean(raw_meaning)
             if not meaning:
                 invalid.append(f"{ejdict.name}:{line_number}: empty meaning"); continue
-            for lemma in (clean(value) for value in headwords.split(",")):
+            lemmas = [clean(value) for value in headwords.split(",") if clean(value)]
+            for lemma in lemmas:
                 key = norm(lemma)
                 item = words.get(key) or expressions.get(key)
-                if not item: continue
-                add_ja_meaning(item, meaning, "EJDict", is_expression=key in expressions)
-                ejdict_matches.add(item["id"])
+                if item:
+                    add_ja_meaning(item, meaning, "EJDict", is_expression=key in expressions)
+                    ejdict_matches.add(item["id"])
+
+                # EJDict explicitly marks a small, high-confidence family of
+                # constructions such as "be liable to do". Preserve those
+                # sourced patterns as independent study items. We deliberately
+                # do not infer collocations from prose or generate meanings.
+                for segment in raw_meaning.split(" / "):
+                    for match in EJDICT_BE_TO_DO_RE.finditer(segment):
+                        expression_text = clean(match.group(1) + " do")
+                        pattern_key = norm(expression_text)
+                        if not re.search(rf"(?<![\w']){re.escape(key)}(?![\w'])", pattern_key):
+                            continue
+                        usage_meaning = clean(segment[match.end():]).replace("『", "").replace("』", "")
+                        if not usage_meaning:
+                            continue
+                        word = ensure_word(lemma, "EJDict")
+                        add_ja_meaning(word, meaning, "EJDict")
+                        expression = ensure_expression(expression_text, "EJDict")
+                        expression["isUsagePattern"] = True
+                        add_ja_meaning(expression, usage_meaning, "EJDict", is_expression=True)
+                        ejdict_matches.add(word["id"]); ejdict_usage_patterns.add(expression["id"])
     counts["EJDict"] = len(ejdict_matches)
+    counts["EJDict usage patterns"] = len(ejdict_usage_patterns)
 
     word_aliases: dict[str, set[str]] = defaultdict(set)
     for key, item in words.items():
@@ -333,7 +356,7 @@ def main() -> int:
         manifest = {"schemaVersion": SCHEMA_VERSION, "dictionaryVersion": version, "buildDate": dt.datetime.now(dt.timezone.utc).isoformat(), "wordCount": len(word_rows), "expressionCount": len(expression_rows), "existenceIndexCount": existence_count, "exampleCount": len(examples)+len(expression_examples), "totalBytes": total_bytes, "shards": shards}
         manifest_bytes = json.dumps(manifest, ensure_ascii=False, indent=2).encode(); (OUT/"manifest.json").write_bytes(manifest_bytes); total_bytes += len(manifest_bytes); manifest["totalBytes"] = total_bytes; (OUT/"manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2))
         words_with_ja = {row["wordId"] for row in tables["meanings"] if row.get("language") == "ja"}
-        report = {"CEFR-J word count": counts["CEFR-J"], "Octanove count": counts["Octanove"], "DiQt count": counts["DiQt"], "EJDict matched count": counts["EJDict"], "Japanese WordNet meanings": counts["Japanese WordNet"], "FreeDict meanings": counts["FreeDict"], "JMdict meanings": counts["JMdict"], "Japanese Wiktionary meanings": counts["Japanese Wiktionary"], "English Wiktionary Japanese translations": counts["Wiktionary Japanese translations"], "PHRASE count": counts["PHRASE"], "PHaVE count": counts["PHaVE"], "Wiktionary detailed count": sum(1 for w in word_rows if "Wiktionary" in w["sources"]), "Wiktionary existence count": existence_count, "combined words": len(word_rows), "combined expressions": len(expression_rows), "words with Japanese meaning": len(words_with_ja), "words without Japanese meaning": len(word_rows) - len(words_with_ja), "existence-only due to missing Japanese meaning": len(incomplete_words), "existence-only headwords": [item["lemma"] for item in incomplete_words], "examples": len(tables["examples"])+len(tables["expressionExamples"]), "meanings": len(tables["meanings"])+len(tables["expressionMeanings"]), "definitions": len(tables["definitions"]), "duplicates": duplicate_count, "conflicts": conflicts, "invalid rows": invalid, "final bytes": total_bytes, "shard count": len(shards)}
+        report = {"CEFR-J word count": counts["CEFR-J"], "Octanove count": counts["Octanove"], "DiQt count": counts["DiQt"], "EJDict matched count": counts["EJDict"], "EJDict usage pattern count": counts["EJDict usage patterns"], "Japanese WordNet meanings": counts["Japanese WordNet"], "FreeDict meanings": counts["FreeDict"], "JMdict meanings": counts["JMdict"], "Japanese Wiktionary meanings": counts["Japanese Wiktionary"], "English Wiktionary Japanese translations": counts["Wiktionary Japanese translations"], "PHRASE count": counts["PHRASE"], "PHaVE count": counts["PHaVE"], "Wiktionary detailed count": sum(1 for w in word_rows if "Wiktionary" in w["sources"]), "Wiktionary existence count": existence_count, "combined words": len(word_rows), "combined expressions": len(expression_rows), "words with Japanese meaning": len(words_with_ja), "words without Japanese meaning": len(word_rows) - len(words_with_ja), "existence-only due to missing Japanese meaning": len(incomplete_words), "existence-only headwords": [item["lemma"] for item in incomplete_words], "examples": len(tables["examples"])+len(tables["expressionExamples"]), "meanings": len(tables["meanings"])+len(tables["expressionMeanings"]), "definitions": len(tables["definitions"]), "duplicates": duplicate_count, "conflicts": conflicts, "invalid rows": invalid, "final bytes": total_bytes, "shard count": len(shards)}
         REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2))
         print(f"Dictionary {version}: {len(word_rows):,} words, {len(expression_rows):,} expressions, {existence_count:,} existence entries")
         print(f"Final size: {total_bytes/1024/1024:.2f} MB in {len(shards)} shards")

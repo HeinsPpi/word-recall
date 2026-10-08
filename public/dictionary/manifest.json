@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "dictionaryVersion": "2026.10.06-de0d36a6",
-  "buildDate": "2026-10-06T22:25:45.180367+00:00",
-  "wordCount": 8365,
-  "expressionCount": 738,
+  "dictionaryVersion": "2026.10.08-8e614781",
+  "buildDate": "2026-10-08T00:13:37.966483+00:00",
+  "wordCount": 8366,
+  "expressionCount": 746,
   "existenceIndexCount": 1355849,
-  "exampleCount": 112306,
-  "totalBytes": 98015882,
+  "exampleCount": 112314,
+  "totalBytes": 98043803,
   "shards": [
     {
       "path": "words/0.json",
@@ -53,9 +53,9 @@
     {
       "path": "words/6.json",
       "table": "words",
-      "count": 510,
-      "bytes": 129188,
-      "sha256": "b0a5a1ad26633f6f873772daf12a38b58061719c8ba5d1ffc2864bb620cb4fbb"
+      "count": 511,
+      "bytes": 129405,
+      "sha256": "26c2f86ca44a8e227b01f1e4b17ee3eed5a1307fae6dff6f2f6aba1b8f15654d"
     },
     {
       "path": "words/7.json",
@@ -200,9 +200,9 @@
     {
       "path": "meanings/b.json",
       "table": "meanings",
-      "count": 992,
-      "bytes": 256724,
-      "sha256": "4c5fe9672cd0dc6c2bdfe8c285d1ed6184313bc2f29c4e4e7083f5376cc1e781"
+      "count": 993,
+      "bytes": 257089,
+      "sha256": "2981288020bf9f0fa4aac01d14983581b82ca416cafcbfda144e44e49c723fd9"
     },
     {
       "path": "meanings/c.json",
@@ -263,9 +263,9 @@
     {
       "path": "definitions/4.json",
       "table": "definitions",
-      "count": 4934,
-      "bytes": 778809,
-      "sha256": "a3a396e43f4baba20c7e83c408b99d90a864bbd0dad1836a963a05f0e27d97f0"
+      "count": 4935,
+      "bytes": 778914,
+      "sha256": "c4f9780cf8b201ca145c76bd31f944d79d7e71bdf3468dc96995a8215571b739"
     },
     {
       "path": "definitions/5.json",
@@ -291,9 +291,9 @@
     {
       "path": "definitions/8.json",
       "table": "definitions",
-      "count": 5025,
-      "bytes": 790889,
-      "sha256": "71104dece7a775f3131ff4dbd52a85fee714380a73a8e11f7bee74bda4016079"
+      "count": 5027,
+      "bytes": 791182,
+      "sha256": "12aa938dd2063a7615e6a181545fe2f206e1fa744563969ec0ac95f18a963161"
     },
     {
       "path": "definitions/9.json",
@@ -340,9 +340,9 @@
     {
       "path": "definitions/f.json",
       "table": "definitions",
-      "count": 4797,
-      "bytes": 757784,
-      "sha256": "34db162c743c812dad157c174dd831a8962fcc746a3a53e70a28fbef2dd8c8d2"
+      "count": 4798,
+      "bytes": 757941,
+      "sha256": "2bf5921c1f40a603d1995624e018c73b242de5edc8f450ef4fa82f84f23da31d"
     },
     {
       "path": "pronunciations/0.json",
@@ -375,9 +375,9 @@
     {
       "path": "pronunciations/4.json",
       "table": "pronunciations",
-      "count": 2069,
-      "bytes": 227564,
-      "sha256": "2e63efd7e5e6fd815549605ce18c2946960c2ebae1d4d4ce324f05f24f6417ef"
+      "count": 2070,
+      "bytes": 227678,
+      "sha256": "d509808cda19ab8931462b70f3fb9e1516a4ea443a2ca6e44d780578c2a20486"
     },
     {
       "path": "pronunciations/5.json",
@@ -410,9 +410,9 @@
     {
       "path": "pronunciations/9.json",
       "table": "pronunciations",
-      "count": 2102,
-      "bytes": 230804,
-      "sha256": "c69633ad2e8d61323f6d02dd08d311f9b4874ddee7fcc46dffc5ce5cd8a45234"
+      "count": 2103,
+      "bytes": 230918,
+      "sha256": "77ce2684d13811e14918071b2bdf28ef9479b37aeb4eacbe88966bc2584d015f"
     },
     {
       "path": "pronunciations/a.json",
@@ -452,9 +452,9 @@
     {
       "path": "pronunciations/f.json",
       "table": "pronunciations",
-      "count": 2062,
-      "bytes": 226556,
-      "sha256": "ae39855589f0a14cad0be028438b648e3fe371cbff2076e824a4001f266ca1de"
+      "count": 2063,
+      "bytes": 226669,
+      "sha256": "87becc220dbcbef89decb99787a6c80d42bd56c026765bccaf852e6946e3e3d9"
     },
     {
       "path": "wordForms/0.json",
@@ -473,9 +473,9 @@
     {
       "path": "wordForms/2.json",
       "table": "wordForms",
-      "count": 2517,
-      "bytes": 411438,
-      "sha256": "ade179029a2cfdcada00d53880c6636dfa38e03fded7961ea14f3c25e1d46aec"
+      "count": 2518,
+      "bytes": 411603,
+      "sha256": "ecb2d2c8028398b12921bbf69009155d12c054b176df427a6b2d5e7661b1a462"
     },
     {
       "path": "wordForms/3.json",
@@ -522,9 +522,9 @@
     {
       "path": "wordForms/9.json",
       "table": "wordForms",
-      "count": 2572,
-      "bytes": 421296,
-      "sha256": "85a1adf3ecfda04740ec8b3aba97d7a0e1aa121fa63ef62a28ee0343c7c600d2"
+      "count": 2573,
+      "bytes": 421461,
+      "sha256": "830e465a1ad69fa864e17dcb30a0a9b71d576d934509318d7fc50e0e6af32479"
     },
     {
       "path": "wordForms/a.json",
@@ -599,9 +599,9 @@
     {
       "path": "examples/4.json",
       "table": "examples",
-      "count": 6680,
-      "bytes": 1853737,
-      "sha256": "ef45331f8236a050b4953a68d8dcabdcf8f17d747a4cb3f8144755d06589b1dc"
+      "count": 6681,
+      "bytes": 1853976,
+      "sha256": "0811d13a1078a833df2dba6893e22e9190ab2a0d52e8c76c0e1268ee0a6b2cae"
     },
     {
       "path": "examples/5.json",
@@ -613,9 +613,9 @@
     {
       "path": "examples/6.json",
       "table": "examples",
-      "count": 6824,
-      "bytes": 1875683,
-      "sha256": "73fc672cc166a4640b9326ec278e97f69675b2a52457a26e0a80149987ba1ec2"
+      "count": 6825,
+      "bytes": 1875861,
+      "sha256": "14d1372bef6f48b5ec2b700291e24668ef23cab6a5e0ae81dcfabe3218d905eb"
     },
     {
       "path": "examples/7.json",
@@ -627,30 +627,30 @@
     {
       "path": "examples/8.json",
       "table": "examples",
-      "count": 6780,
-      "bytes": 1887851,
-      "sha256": "e4341568eb9a55f1a1c1051edc9f4dd624e4e13102b9d6ba9cf2e56713de18cc"
+      "count": 6782,
+      "bytes": 1888244,
+      "sha256": "65cdd2217f7ea143e6fd154b32d36894ba963a754d7df82f0e0bb4d69b1d4fc7"
     },
     {
       "path": "examples/9.json",
       "table": "examples",
-      "count": 6722,
-      "bytes": 1865056,
-      "sha256": "c7710bb3131eba1ee98c2a0c3d442ed5ad4addd7be6d2d86349f0055efc73b8c"
+      "count": 6723,
+      "bytes": 1865278,
+      "sha256": "d3afd96b4d561a38914126357044af9b559273e5c4911ad85adce227edb5b663"
     },
     {
       "path": "examples/a.json",
       "table": "examples",
-      "count": 6698,
-      "bytes": 1841166,
-      "sha256": "9b77aa90744603355e05e8be8872b368c54843a131aa9944b51a40bb4e6b2205"
+      "count": 6699,
+      "bytes": 1841361,
+      "sha256": "4b11ea75ff4c4d3b8072a2e2fa0e902bddf51a0a9778a94df050c80c6ce02034"
     },
     {
       "path": "examples/b.json",
       "table": "examples",
-      "count": 6649,
-      "bytes": 1838503,
-      "sha256": "d8e84c9d2aa642912399fffe4a6601ee19d4c0d05a14fb5051de74e86c69cae0"
+      "count": 6650,
+      "bytes": 1838885,
+      "sha256": "8e3beede170edca7b43740c0e78b7951405ea2422e26381753c83b99125dbf5f"
     },
     {
       "path": "examples/c.json",
@@ -676,128 +676,128 @@
     {
       "path": "examples/f.json",
       "table": "examples",
-      "count": 6592,
-      "bytes": 1829726,
-      "sha256": "85b018d300c99b50e2e028390f892083da2f4fbcc0c80b2f40c6840b3a5ee8e3"
+      "count": 6593,
+      "bytes": 1830173,
+      "sha256": "ca46f2e8ce467844ce81e0dbeabac2f093f1629d095f62b6ba6513a8790e5d86"
     },
     {
       "path": "expressions/0.json",
       "table": "expressions",
       "count": 50,
-      "bytes": 10896,
-      "sha256": "1a46c6ee24c92c4d5d47d43e3b01f08afe7486d6c98e1971213c9cef86e2b383"
+      "bytes": 12046,
+      "sha256": "596f93875cc960c6c5f533882916e52a33a26c77f3a1856f2a8c4966007b0688"
     },
     {
       "path": "expressions/1.json",
       "table": "expressions",
       "count": 58,
-      "bytes": 12573,
-      "sha256": "60095682922c1a1703a091424bfc757a7a9736c25605fa33ec707724e73b86b8"
+      "bytes": 13907,
+      "sha256": "94339bc296dfa7187e7ffcdfaeb85336f9a1a3af0c95c050c5a07855cccd2302"
     },
     {
       "path": "expressions/2.json",
       "table": "expressions",
       "count": 51,
-      "bytes": 11055,
-      "sha256": "9947f1bf4966f5ae9d0ec5cb54148b1d08a3695b2b7a69612fb4b794afe8353b"
+      "bytes": 12228,
+      "sha256": "72f6990cce63c60a6388748490ed698b4cd64a519d5e4bc9e1cd4427a666f515"
     },
     {
       "path": "expressions/3.json",
       "table": "expressions",
       "count": 45,
-      "bytes": 9864,
-      "sha256": "a40dad3b5c2e54994b6a2477118d263b9e715b2e0e076afea89ecd45d33e3581"
+      "bytes": 10899,
+      "sha256": "92b50fe623be79296fc94d88afdb72572b33afbef2c55943351c42cce1050dbe"
     },
     {
       "path": "expressions/4.json",
       "table": "expressions",
-      "count": 35,
-      "bytes": 7583,
-      "sha256": "0688aac85246097bd635a3a887f4a0b82faf7730ccf2878759410fd9dac34227"
+      "count": 37,
+      "bytes": 8862,
+      "sha256": "7511809797a68f56a8e0832d2dbe1a6f2cebce946c0bf2dcfd2d6abd3624386d"
     },
     {
       "path": "expressions/5.json",
       "table": "expressions",
       "count": 48,
-      "bytes": 10352,
-      "sha256": "3e6681ec41d084eb56bb04e73895c9ac46c1f4d339869d078d8b4ca046694972"
+      "bytes": 11456,
+      "sha256": "d4c28141aed37091710ca5f76f0085719da9cb428263e067ba8c5c8e2406961a"
     },
     {
       "path": "expressions/6.json",
       "table": "expressions",
-      "count": 52,
-      "bytes": 11186,
-      "sha256": "517a270bd0a7a4cd22b64a430f8c22dfee4eb8a82ac8d474a0b7c13386bb2523"
+      "count": 53,
+      "bytes": 12619,
+      "sha256": "fc50c76ce35bec1954816dbdd9b4c6078b6acbbb842d558d6eb63ab90e5756d2"
     },
     {
       "path": "expressions/7.json",
       "table": "expressions",
       "count": 46,
-      "bytes": 9908,
-      "sha256": "fe422dd43da9ebd10e0326cabd9194d60ef600611df8c634386a782066a39d89"
+      "bytes": 10966,
+      "sha256": "81536526c7553c7a8616f8df5619d90122accf8fd2c21af774cfae091c84ee19"
     },
     {
       "path": "expressions/8.json",
       "table": "expressions",
       "count": 34,
-      "bytes": 7385,
-      "sha256": "e170c0427e04f227a9f25218f63104960c8fd1563606fd88ee59875901a2ec48"
+      "bytes": 8167,
+      "sha256": "223da5e52f22c87c7e8cf951e0cafa76db6eb6995474b3e6da064aa174db5783"
     },
     {
       "path": "expressions/9.json",
       "table": "expressions",
       "count": 55,
-      "bytes": 11993,
-      "sha256": "6223ce17e804cb3b2d32fd441dde2d96388b1da0c56b7c6cf69c7ecda304a485"
+      "bytes": 13258,
+      "sha256": "a9999a0f375b0d136a015077a282ddf5be81d3864da98520f4fd0990e84ce5c8"
     },
     {
       "path": "expressions/a.json",
       "table": "expressions",
       "count": 46,
-      "bytes": 9991,
-      "sha256": "4ff08fb586762bb61434c1e88836b4698357949ae5a1a7b4c8585890702f4680"
+      "bytes": 11049,
+      "sha256": "d093b2b30450c7d738ee8c85c7b0ea2aedc8cb326104094252aa7fc044237207"
     },
     {
       "path": "expressions/b.json",
       "table": "expressions",
-      "count": 45,
-      "bytes": 9721,
-      "sha256": "da5962dea8cb59d17b4d9a1bd5de151cca48a05a1c9922e1232b49eb84a4b80c"
+      "count": 46,
+      "bytes": 10991,
+      "sha256": "06f8dd56ba0f98bee9ace07dff9a567452133bd17f5692762831f317c6c95924"
     },
     {
       "path": "expressions/c.json",
       "table": "expressions",
       "count": 44,
-      "bytes": 9637,
-      "sha256": "8001cd28e351011401dcd6cff1f11bd09b950d5f73a61df02660703268cb6be3"
+      "bytes": 10649,
+      "sha256": "ee3d1add530623f04044844a0814779bb84e6e60f0a4afb2c9d3fe39e260c0b1"
     },
     {
       "path": "expressions/d.json",
       "table": "expressions",
-      "count": 51,
-      "bytes": 11096,
-      "sha256": "716fa9e9e86cddbed6952e3acbfc586f7b0098f509afe5f64fa2640a38891cac"
+      "count": 52,
+      "bytes": 12502,
+      "sha256": "be14c76965850084f9b93581587ad1738ce50ff264250b593b2818c970bf30da"
     },
     {
       "path": "expressions/e.json",
       "table": "expressions",
-      "count": 41,
-      "bytes": 8981,
-      "sha256": "230c2082d50ca76dac40301973a47107dbbea46360c84fa95b54132e7e548dc4"
+      "count": 43,
+      "bytes": 10400,
+      "sha256": "588e6419d3896d252dbf64a3226c295731339600133a3ab8aac270e437923458"
     },
     {
       "path": "expressions/f.json",
       "table": "expressions",
-      "count": 37,
-      "bytes": 7996,
-      "sha256": "7b211555332a10a80d6989770def1fe7e1c173f34bc9b0de848d13b6b6817261"
+      "count": 38,
+      "bytes": 9084,
+      "sha256": "b3636e3902294a6a2e75043820866d8d14bb8658379e5ed5716a58a97b4e3287"
     },
     {
       "path": "expressionWords/0.json",
       "table": "expressionWords",
-      "count": 115,
-      "bytes": 12191,
-      "sha256": "375a2144cf0701ce1cf1868a4a67b4fcff63331b7e90ad998b44c02e946af6cc"
+      "count": 116,
+      "bytes": 12297,
+      "sha256": "d2c32dea5a2a8f11952ee5dc6163cda352c186581b3f4ae154127f240d48f5c5"
     },
     {
       "path": "expressionWords/1.json",
@@ -809,128 +809,128 @@
     {
       "path": "expressionWords/2.json",
       "table": "expressionWords",
-      "count": 89,
-      "bytes": 9435,
-      "sha256": "937a32998be329cb9d2a45f6e015bd1453ebdf03e7a4c6c82b4db2fd62299265"
+      "count": 92,
+      "bytes": 9753,
+      "sha256": "7423bdbad3784fb12010a6f70946529e906bc2a15231610c3bd13d65a7e0e6d1"
     },
     {
       "path": "expressionWords/3.json",
       "table": "expressionWords",
-      "count": 97,
-      "bytes": 10283,
-      "sha256": "c2b2c5d1e4099a1b9eb5c766dc54384638b45bf06098e8515be72a57fa271a07"
+      "count": 98,
+      "bytes": 10389,
+      "sha256": "77d296cafca2c356743f3d907dcb237dd7729a8deff055091a4b4368a60ffd07"
     },
     {
       "path": "expressionWords/4.json",
       "table": "expressionWords",
-      "count": 74,
-      "bytes": 7845,
-      "sha256": "234515d1855d835e532a2a8dca38fb8a034b6579f52134f2faa5f282d5913664"
+      "count": 76,
+      "bytes": 8057,
+      "sha256": "2d5d9609b1f2c434ee362f6b318da9557ba053e3d9549b17dde0e92265b9a7fe"
     },
     {
       "path": "expressionWords/5.json",
       "table": "expressionWords",
-      "count": 106,
-      "bytes": 11237,
-      "sha256": "d479cb5945d724e3b6cf99091c09fa0157f5fd1fbd67d642b55200a53a3c8693"
+      "count": 107,
+      "bytes": 11343,
+      "sha256": "73a7385be8642b390b4708d74cc3df746292cd432438722bba3fd8140723c0d9"
     },
     {
       "path": "expressionWords/6.json",
       "table": "expressionWords",
-      "count": 104,
-      "bytes": 11025,
-      "sha256": "faee34763e6ea77da7c126319ccc7333dd11983c3da2cc3e7c867d4f9c5e878f"
+      "count": 106,
+      "bytes": 11237,
+      "sha256": "737ec4065a42d935f4384931cb1237de96026a4e47044af1fd5d182cdca4ebdd"
     },
     {
       "path": "expressionWords/7.json",
       "table": "expressionWords",
-      "count": 99,
-      "bytes": 10495,
-      "sha256": "249c1daebf499fb3113adabd710b2647921d06250137148d5dcb46825e4f8563"
+      "count": 102,
+      "bytes": 10813,
+      "sha256": "6798f019318cf96d7ffc5816318bff15c59376e5e4c5fd930673afd3c3617729"
     },
     {
       "path": "expressionWords/8.json",
       "table": "expressionWords",
-      "count": 105,
-      "bytes": 11131,
-      "sha256": "3a64e41620993fad9fe36c2f3a923e5f126ac77d45e0bbfae7beb1bc79c0f03f"
+      "count": 109,
+      "bytes": 11555,
+      "sha256": "bace8838b358ba64503cd6d2e5351ce5519d8791eb0f6097d4c16150bf734325"
     },
     {
       "path": "expressionWords/9.json",
       "table": "expressionWords",
-      "count": 89,
-      "bytes": 9435,
-      "sha256": "af66a9348a6440c5a053a7424efbc348399fde45052ef91bcc69cf9e5d1def5b"
+      "count": 91,
+      "bytes": 9647,
+      "sha256": "d6af581503169afa758897ed43a72e059daef5346024cd477444290b575a8616"
     },
     {
       "path": "expressionWords/a.json",
       "table": "expressionWords",
-      "count": 88,
-      "bytes": 9329,
-      "sha256": "93ce49f0af19a5431c786cd0fb38d3b145b48105e8748d22cd01eae6d673630e"
+      "count": 89,
+      "bytes": 9435,
+      "sha256": "33ab335fce00f231735ee448107b6a7f831fa2206aedad93a560a8fcd2874eb8"
     },
     {
       "path": "expressionWords/b.json",
       "table": "expressionWords",
-      "count": 97,
-      "bytes": 10283,
-      "sha256": "b563af44d642edb9ceb20b718cf63ad07676056093e054eefe6f335abc5caa50"
+      "count": 99,
+      "bytes": 10495,
+      "sha256": "b945a6755bb47f9380754bc130f1d8073c612cf51b1a52fbe1e0cd4b005995cd"
     },
     {
       "path": "expressionWords/c.json",
       "table": "expressionWords",
-      "count": 96,
-      "bytes": 10177,
-      "sha256": "4a42b30c1a5096b0a66ffac1caf215c7cf9200d7cf3e158a61983cbd1c530608"
+      "count": 99,
+      "bytes": 10495,
+      "sha256": "f7e50a933920e43b4e234c5fef2f8e904bf96967f6ea7f5307482d9ed85fb86b"
     },
     {
       "path": "expressionWords/d.json",
       "table": "expressionWords",
-      "count": 101,
-      "bytes": 10707,
-      "sha256": "1caa5c79dbaf7dda341bfe248377a0aa61f956eb62a788d88bcf212c385df23e"
+      "count": 105,
+      "bytes": 11131,
+      "sha256": "fc38ffb4f68cab16be2f2c82fa0b15e571f30c1f16024d75f88e20862b36ff7e"
     },
     {
       "path": "expressionWords/e.json",
       "table": "expressionWords",
-      "count": 89,
-      "bytes": 9435,
-      "sha256": "03b04d7da4f53edd4401f2a3184f249c19e6543b9a45d5ab3735735d95142691"
+      "count": 90,
+      "bytes": 9541,
+      "sha256": "7daefb68725b48f4fb028cd1896ab56445643d0b568eb332bd8f579f68a00a5c"
     },
     {
       "path": "expressionWords/f.json",
       "table": "expressionWords",
-      "count": 99,
-      "bytes": 10495,
-      "sha256": "cdd5dd6940f97db0da4c810f87368e9852b5c5bba39af2257b2735f76ea4f9af"
+      "count": 101,
+      "bytes": 10707,
+      "sha256": "1c3bf777f1366400440b5dad87f4a04bf654860527048261d3771a42273c2872"
     },
     {
       "path": "expressionMeanings/0.json",
       "table": "expressionMeanings",
-      "count": 57,
-      "bytes": 11451,
-      "sha256": "423a7a32416f8f9f8df65de04b1bd363f39deb2c2a3885a7366135ed3b13979e"
+      "count": 58,
+      "bytes": 11623,
+      "sha256": "4885c7d38920e4b06ac38bb05d16f8b5d6fd85768c62787300c30dd531e36afa"
     },
     {
       "path": "expressionMeanings/1.json",
       "table": "expressionMeanings",
-      "count": 53,
-      "bytes": 10546,
-      "sha256": "13c8f6326b2425d8072ab9ef04ed2896a8406aaf5dc4a0225a8d085cc83615f0"
+      "count": 54,
+      "bytes": 10680,
+      "sha256": "7b7668e66328b53b70267944a1d2f34c599f3866040f5a9ef272ae9c3bd1a33a"
     },
     {
       "path": "expressionMeanings/2.json",
       "table": "expressionMeanings",
-      "count": 61,
-      "bytes": 12750,
-      "sha256": "4fd8352d64527bd966bd1d3b1dda2ec2fbf538fa62ad51d9169019fc50aab23b"
+      "count": 63,
+      "bytes": 13082,
+      "sha256": "295fd2c54c3b4510dc09db1525d3aa7a64094212394db8d6887b409964aa77d7"
     },
     {
       "path": "expressionMeanings/3.json",
       "table": "expressionMeanings",
-      "count": 56,
-      "bytes": 10783,
-      "sha256": "9f0c91ff340e8a8bc46973fbf545220ecbb3f2d4bdc70baf52fa5443a7985111"
+      "count": 57,
+      "bytes": 10950,
+      "sha256": "908fedb1a78fc8f5016beb90e80a0f635b8d8b6a401f0543bd31d66f0ad656ac"
     },
     {
       "path": "expressionMeanings/4.json",
@@ -977,44 +977,44 @@
     {
       "path": "expressionMeanings/a.json",
       "table": "expressionMeanings",
-      "count": 57,
-      "bytes": 10763,
-      "sha256": "ae6690c3c0823c2bf9a0702f8c673832c68592f959c4f3d3bfc6873d4530bb23"
+      "count": 58,
+      "bytes": 10929,
+      "sha256": "f5720ac4bcd5a3f70596d8d764db618d71443a03a6fa1b4f203b32e1d8e34019"
     },
     {
       "path": "expressionMeanings/b.json",
       "table": "expressionMeanings",
-      "count": 64,
-      "bytes": 13132,
-      "sha256": "120ba4ad1d17d0e29dc8ff3997b0c5af4259815350dc1ea4710c23b9c076268b"
+      "count": 65,
+      "bytes": 13277,
+      "sha256": "e843bcf1fe566a6af674fcbb179d7ad0af6b410389b9ed6967ebe516009ac9cb"
     },
     {
       "path": "expressionMeanings/c.json",
       "table": "expressionMeanings",
-      "count": 50,
-      "bytes": 9884,
-      "sha256": "9f41633e1fcd0674ae861089707d6e7b7d9250aaf81b08f2ce90a202b4a8c574"
+      "count": 51,
+      "bytes": 10049,
+      "sha256": "edc04d116859d8559a6cb381c6473ab866428a0af809f687e387b3c4a9fd9af0"
     },
     {
       "path": "expressionMeanings/d.json",
       "table": "expressionMeanings",
-      "count": 54,
-      "bytes": 10120,
-      "sha256": "3e13526b36987a3d24693e0fe0e7f4a808fcba8236ef59389e31619f24db9b10"
+      "count": 55,
+      "bytes": 10346,
+      "sha256": "55b3d76a34bdfce042b726543d16457e56cb876bf7f18349c81f434e83c75c26"
     },
     {
       "path": "expressionMeanings/e.json",
       "table": "expressionMeanings",
-      "count": 48,
-      "bytes": 9615,
-      "sha256": "e7627124e6961ac13f144ecd8c16d8ca12cc68a3be1345ff5d8d3114c8b14090"
+      "count": 49,
+      "bytes": 9761,
+      "sha256": "75f073c4eacf7d3a57cadb09b6e8c31ea20c929970b3c4fcaef406b1cfd1c76f"
     },
     {
       "path": "expressionMeanings/f.json",
       "table": "expressionMeanings",
-      "count": 57,
-      "bytes": 11214,
-      "sha256": "677f92fc76b4e210dfa2d837912eefd2de913268d94157f2b379dd3fe11e847b"
+      "count": 58,
+      "bytes": 11351,
+      "sha256": "a66b052a87f49b9f1578819cddd034e9430ad0cb520ae3257ecbec5f42416c36"
     },
     {
       "path": "expressionExamples/0.json",

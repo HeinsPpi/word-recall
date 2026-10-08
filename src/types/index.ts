@@ -69,6 +69,7 @@ export interface DictionaryExpression {
   cefrLevel: CefrLevel | null
   inPhraseList: boolean
   inPhaveList: boolean
+  isUsagePattern?: boolean
   sourceCount: number
   sourceStatus: Exclude<SourceStatus, 'userProvided'>
   sources: SourceName[]

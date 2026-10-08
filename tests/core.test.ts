@@ -17,7 +17,8 @@ describe('typo detection', () => {
   it('rescues only safe long non-word typos', () => { expect(isSafeTypo('enviroment', 'environment', false)).toBe(true); expect(isSafeTypo('cat', 'cut', false)).toBe(false); expect(isSafeTypo('enviroment', 'environment', true)).toBe(false); expect(isSafeTypo('account of', 'account for', false, true)).toBe(false) })
 })
 describe('expression eligibility and order', () => {
-  it('allows B2 and below, PHRASE, or PHaVE', () => { expect(isEligibleExpression(expression({ cefrLevel: 'B2' }))).toBe(true); expect(isEligibleExpression(expression({ cefrLevel: 'C1' }))).toBe(false); expect(isEligibleExpression(expression({ inPhraseList: true }))).toBe(true); expect(isEligibleExpression(expression({ inPhaveList: true }))).toBe(true) })
+  it('allows B2 and below, PHRASE, PHaVE, or a sourced usage pattern', () => { expect(isEligibleExpression(expression({ cefrLevel: 'B2' }))).toBe(true); expect(isEligibleExpression(expression({ cefrLevel: 'C1' }))).toBe(false); expect(isEligibleExpression(expression({ inPhraseList: true }))).toBe(true); expect(isEligibleExpression(expression({ inPhaveList: true }))).toBe(true); expect(isEligibleExpression(expression({ isUsagePattern: true, sources: ['EJDict'] }))).toBe(true) })
+  it('does not make every EJDict-matched expression eligible', () => expect(isEligibleExpression(expression({ cefrLevel: 'C1', sources: ['EJDict'] }))).toBe(false))
   it('excludes Wiktionary-only and ranks combined evidence first', () => { const best = expression({ id: 'best', cefrLevel: 'B1', inPhaveList: true, sourceCount: 3 }); const onlyWiki = expression({ id: 'wiki' }); expect(rankExpressions([onlyWiki, best]).map((x) => x.id)).toEqual(['best']) })
 })
 describe('progress and mastery', () => {
